@@ -46,6 +46,27 @@ ul.task-list{list-style:none;padding-left:4px}
 .chart .ct{font:700 16px var(--display);fill:var(--ink)} .chart .cs,.chart .tk{font:12px var(--body);fill:var(--muted)} .chart .lv{font:600 12px var(--body);fill:var(--ink)}
 .chart .gr{stroke:var(--line)} .chart .ax{stroke:var(--muted)}
 .chart .bg{fill:var(--good)} .chart .bm{fill:var(--warn)} .chart .bp{fill:var(--poor)}
+.chart-m{display:none}
+.chart-m figcaption{display:grid;gap:2px;margin-bottom:12px}
+.chart-m .ct{font:700 1.05rem/1.25 var(--display)} .chart-m .cs,.chart-m .tk{font-size:.85rem;color:var(--muted);line-height:1.4}
+.mbars{list-style:none;margin:0 0 10px;padding:0;display:grid;gap:6px}
+.mbars li{display:grid;grid-template-columns:2.4em minmax(0,1fr) 4.4em 2.4em;gap:8px;align-items:center;font-size:.9rem;max-width:none}
+.mbars .num{text-align:right;font-variant-numeric:tabular-nums}
+.mb-track{height:14px;background:var(--surface-2);border-radius:4px;overflow:hidden}
+.mb-bar{display:block;height:100%;border-radius:4px}
+.mb-bar.bg{background:var(--good)} .mb-bar.bm{background:var(--warn)} .mb-bar.bp{background:var(--poor)}
+@media (max-width:640px){
+.chart-d{display:none} .chart-m{display:block}
+.tw{overflow:visible;border:0;border-radius:0;background:none}
+.tw table,.tw tbody,.tw tr,.tw td{display:block;width:auto}
+.tw thead{display:none}
+.tw tr{background:var(--surface);border:1px solid var(--line);border-radius:10px;margin-bottom:12px;overflow:hidden}
+.tw td,.tw tr:last-child td{min-width:0;padding:8px 12px;border-bottom:1px solid var(--line)}
+.tw td:last-child{border-bottom:0}
+.tw td::before{content:attr(data-label);display:block;font-size:.8rem;font-weight:700;color:var(--muted);line-height:1.3;margin-bottom:2px}
+.tw td:first-child{background:var(--surface-2);font-weight:700}
+.tw td:first-child::before{content:none}
+}
 @media (prefers-reduced-motion:no-preference){a{transition:color .15s}}
 </style>
 </head>
@@ -71,49 +92,49 @@ ul.task-list{list-style:none;padding-left:4px}
 </thead>
 <tbody>
 <tr>
-<td><strong>1. Best all-round (recommended)</strong></td>
-<td>Lemosho, 8 days, group departure</td>
-<td><a href="https://www.kandooadventures.com/destination-kilimanjaro/trip-kilimanjaro-lemosho-route/TZLM" target="_blank" rel="noopener">Kandoo Adventures</a> (UK)</td>
-<td>£2,399</td>
-<td>£4,798</td>
-<td>≈ £7,400–£9,400</td>
-<td>Twin-share pricing with no forced solo supplement, 4.9 on Trustpilot from 1,230 reviews, daily oxygen checks, private toilet</td>
+<td data-label="Option"><strong>1. Best all-round (recommended)</strong></td>
+<td data-label="Route and days">Lemosho, 8 days, group departure</td>
+<td data-label="Operator (example)"><a href="https://www.kandooadventures.com/destination-kilimanjaro/trip-kilimanjaro-lemosho-route/TZLM" target="_blank" rel="noopener">Kandoo Adventures</a> (UK)</td>
+<td data-label="Each, sharing (climb only)">£2,399</td>
+<td data-label="Climb for you both">£4,798</td>
+<td data-label="Est. all-in for you both">≈ £7,400–£9,400</td>
+<td data-label="Why pick it">Twin-share pricing with no forced solo supplement, 4.9 on Trustpilot from 1,230 reviews, daily oxygen checks, private toilet</td>
 </tr>
 <tr>
-<td><strong>2. Most margin, fewest people</strong></td>
-<td>Northern Circuit, 9 days, group departure</td>
-<td><a href="https://www.ultimatekilimanjaro.com/dates-prices-2027/" target="_blank" rel="noopener">Ultimate Kilimanjaro</a></td>
-<td>$3,649 (≈ £2,720)</td>
-<td>≈ £5,450</td>
-<td>≈ £8,100–£10,100</td>
-<td>Longest acclimatisation, quietest route; private for two is $4,599 each</td>
+<td data-label="Option"><strong>2. Most margin, fewest people</strong></td>
+<td data-label="Route and days">Northern Circuit, 9 days, group departure</td>
+<td data-label="Operator (example)"><a href="https://www.ultimatekilimanjaro.com/dates-prices-2027/" target="_blank" rel="noopener">Ultimate Kilimanjaro</a></td>
+<td data-label="Each, sharing (climb only)">$3,649 (≈ £2,720)</td>
+<td data-label="Climb for you both">≈ £5,450</td>
+<td data-label="Est. all-in for you both">≈ £8,100–£10,100</td>
+<td data-label="Why pick it">Longest acclimatisation, quietest route; private for two is $4,599 each</td>
 </tr>
 <tr>
-<td><strong>3. Maximum medical support</strong></td>
-<td>Lemosho, 9 days climbing (12-day trip)</td>
-<td><a href="https://www.tusker.com/kilimanjaro/climb-lemosho-route/" target="_blank" rel="noopener">Tusker Trail</a></td>
-<td>$6,490 (≈ £4,840)</td>
-<td>≈ £9,690</td>
-<td>≈ £12,300–£14,300</td>
-<td>Oxygen and portable altitude chamber, daytime summit, evacuation insurance included; sharing basis not stated, so confirm</td>
+<td data-label="Option"><strong>3. Maximum medical support</strong></td>
+<td data-label="Route and days">Lemosho, 9 days climbing (12-day trip)</td>
+<td data-label="Operator (example)"><a href="https://www.tusker.com/kilimanjaro/climb-lemosho-route/" target="_blank" rel="noopener">Tusker Trail</a></td>
+<td data-label="Each, sharing (climb only)">$6,490 (≈ £4,840)</td>
+<td data-label="Climb for you both">≈ £9,690</td>
+<td data-label="Est. all-in for you both">≈ £12,300–£14,300</td>
+<td data-label="Why pick it">Oxygen and portable altitude chamber, daytime summit, evacuation insurance included; sharing basis not stated, so confirm</td>
 </tr>
 <tr>
-<td><strong>4. UK-led, acclimatise first</strong></td>
-<td>Mount Meru, then Lemosho</td>
-<td><a href="https://www.jagged-globe.co.uk/trek/kilimanjaro.html" target="_blank" rel="noopener">Jagged Globe</a></td>
-<td>from £2,895 (shown reduced from £3,895)</td>
-<td>from £5,790</td>
-<td>≈ £8,400–£12,400</td>
-<td>Climbing Meru (4,566 m) first is the best acclimatisation available</td>
+<td data-label="Option"><strong>4. UK-led, acclimatise first</strong></td>
+<td data-label="Route and days">Mount Meru, then Lemosho</td>
+<td data-label="Operator (example)"><a href="https://www.jagged-globe.co.uk/trek/kilimanjaro.html" target="_blank" rel="noopener">Jagged Globe</a></td>
+<td data-label="Each, sharing (climb only)">from £2,895 (shown reduced from £3,895)</td>
+<td data-label="Climb for you both">from £5,790</td>
+<td data-label="Est. all-in for you both">≈ £8,400–£12,400</td>
+<td data-label="Why pick it">Climbing Meru (4,566 m) first is the best acclimatisation available</td>
 </tr>
 <tr>
-<td><strong>5. Private climb, just you two</strong></td>
-<td>Lemosho, 8 days</td>
-<td><a href="https://altezzatravel.com/climbing-kilimanjaro/price" target="_blank" rel="noopener">Altezza Travel</a> (Tanzanian)</td>
-<td>$3,937 (≈ £2,940) at the 2-person rate</td>
-<td>≈ £5,880</td>
-<td>≈ £8,500–£10,500</td>
-<td>Your own dates and pace (e.g. the full-moon summit night), first-aid-trained guides, in-house doctor, 4.9 on Trustpilot</td>
+<td data-label="Option"><strong>5. Private climb, just you two</strong></td>
+<td data-label="Route and days">Lemosho, 8 days</td>
+<td data-label="Operator (example)"><a href="https://altezzatravel.com/climbing-kilimanjaro/price" target="_blank" rel="noopener">Altezza Travel</a> (Tanzanian)</td>
+<td data-label="Each, sharing (climb only)">$3,937 (≈ £2,940) at the 2-person rate</td>
+<td data-label="Climb for you both">≈ £5,880</td>
+<td data-label="Est. all-in for you both">≈ £8,500–£10,500</td>
+<td data-label="Why pick it">Your own dates and pace (e.g. the full-moon summit night), first-aid-trained guides, in-house doctor, 4.9 on Trustpilot</td>
 </tr>
 </tbody>
 </table></div>
@@ -134,58 +155,58 @@ ul.task-list{list-style:none;padding-left:4px}
 </thead>
 <tbody>
 <tr>
-<td><strong>Northern Circuit</strong></td>
-<td>9</td>
-<td>Tents</td>
-<td>Longest, quietest, 360° views round the mountain</td>
-<td>Under 5%</td>
-<td>85–98%</td>
-<td>Excellent, most margin</td>
+<td data-label="Route"><strong>Northern Circuit</strong></td>
+<td data-label="Days on mountain">9</td>
+<td data-label="Sleeping">Tents</td>
+<td data-label="Scenery and feel">Longest, quietest, 360° views round the mountain</td>
+<td data-label="Crowds (share of climbers)">Under 5%</td>
+<td data-label="Summit success, operator estimates">85–98%</td>
+<td data-label="Fit for Dad">Excellent, most margin</td>
 </tr>
 <tr>
-<td><strong>Lemosho</strong></td>
-<td>7–8</td>
-<td>Tents</td>
-<td>Quiet, very scenic start in the west; joins Machame traffic from day 3–4</td>
-<td>21%</td>
-<td>85–92% (8-day)</td>
-<td>Excellent, the classic choice</td>
+<td data-label="Route"><strong>Lemosho</strong></td>
+<td data-label="Days on mountain">7–8</td>
+<td data-label="Sleeping">Tents</td>
+<td data-label="Scenery and feel">Quiet, very scenic start in the west; joins Machame traffic from day 3–4</td>
+<td data-label="Crowds (share of climbers)">21%</td>
+<td data-label="Summit success, operator estimates">85–92% (8-day)</td>
+<td data-label="Fit for Dad">Excellent, the classic choice</td>
 </tr>
 <tr>
-<td><strong>Rongai</strong></td>
-<td>6–7</td>
-<td>Tents</td>
-<td>Gentle, drier north side, less dramatic scenery</td>
-<td>9%</td>
-<td>70–85% (7-day)</td>
-<td>Good, especially in wetter months</td>
+<td data-label="Route"><strong>Rongai</strong></td>
+<td data-label="Days on mountain">6–7</td>
+<td data-label="Sleeping">Tents</td>
+<td data-label="Scenery and feel">Gentle, drier north side, less dramatic scenery</td>
+<td data-label="Crowds (share of climbers)">9%</td>
+<td data-label="Summit success, operator estimates">70–85% (7-day)</td>
+<td data-label="Fit for Dad">Good, especially in wetter months</td>
 </tr>
 <tr>
-<td><strong>Machame</strong></td>
-<td>6–7</td>
-<td>Tents</td>
-<td>Very scenic; includes the Barranco Wall scramble (hands needed, not technical)</td>
-<td>43%, the busiest</td>
-<td>65–90% (7-day)</td>
-<td>OK on 7 days; avoid 6</td>
+<td data-label="Route"><strong>Machame</strong></td>
+<td data-label="Days on mountain">6–7</td>
+<td data-label="Sleeping">Tents</td>
+<td data-label="Scenery and feel">Very scenic; includes the Barranco Wall scramble (hands needed, not technical)</td>
+<td data-label="Crowds (share of climbers)">43%, the busiest</td>
+<td data-label="Summit success, operator estimates">65–90% (7-day)</td>
+<td data-label="Fit for Dad">OK on 7 days; avoid 6</td>
 </tr>
 <tr>
-<td><strong>Marangu</strong></td>
-<td>5–6</td>
-<td>Huts (the only route with beds)</td>
-<td>Gentle but busy; up and down the same way; least scenic</td>
-<td>26%</td>
-<td>30–50% (5-day), 50–75% (6-day)</td>
-<td>Poor: too little time to acclimatise</td>
+<td data-label="Route"><strong>Marangu</strong></td>
+<td data-label="Days on mountain">5–6</td>
+<td data-label="Sleeping">Huts (the only route with beds)</td>
+<td data-label="Scenery and feel">Gentle but busy; up and down the same way; least scenic</td>
+<td data-label="Crowds (share of climbers)">26%</td>
+<td data-label="Summit success, operator estimates">30–50% (5-day), 50–75% (6-day)</td>
+<td data-label="Fit for Dad">Poor: too little time to acclimatise</td>
 </tr>
 <tr>
-<td><strong>Umbwe</strong></td>
-<td>6</td>
-<td>Tents</td>
-<td>Steepest and fastest height gain</td>
-<td>1%</td>
-<td>50–70%</td>
-<td>Avoid</td>
+<td data-label="Route"><strong>Umbwe</strong></td>
+<td data-label="Days on mountain">6</td>
+<td data-label="Sleeping">Tents</td>
+<td data-label="Scenery and feel">Steepest and fastest height gain</td>
+<td data-label="Crowds (share of climbers)">1%</td>
+<td data-label="Summit success, operator estimates">50–70%</td>
+<td data-label="Fit for Dad">Avoid</td>
 </tr>
 </tbody>
 </table></div>
@@ -204,29 +225,29 @@ ul.task-list{list-style:none;padding-left:4px}
 </thead>
 <tbody>
 <tr>
-<td>5</td>
-<td>27%</td>
-<td>30–55%</td>
+<td data-label="Days on the mountain">5</td>
+<td data-label="Park data (c. 2006)">27%</td>
+<td data-label="Today&#x27;s operator estimates">30–55%</td>
 </tr>
 <tr>
-<td>6</td>
-<td>44%</td>
-<td>50–75%</td>
+<td data-label="Days on the mountain">6</td>
+<td data-label="Park data (c. 2006)">44%</td>
+<td data-label="Today&#x27;s operator estimates">50–75%</td>
 </tr>
 <tr>
-<td>7</td>
-<td>64%</td>
-<td>70–90%</td>
+<td data-label="Days on the mountain">7</td>
+<td data-label="Park data (c. 2006)">64%</td>
+<td data-label="Today&#x27;s operator estimates">70–90%</td>
 </tr>
 <tr>
-<td>8</td>
-<td>85%</td>
-<td>85–92%</td>
+<td data-label="Days on the mountain">8</td>
+<td data-label="Park data (c. 2006)">85%</td>
+<td data-label="Today&#x27;s operator estimates">85–92%</td>
 </tr>
 <tr>
-<td>9</td>
-<td>—</td>
-<td>90–98%</td>
+<td data-label="Days on the mountain">9</td>
+<td data-label="Park data (c. 2006)">—</td>
+<td data-label="Today&#x27;s operator estimates">90–98%</td>
 </tr>
 </tbody>
 </table></div>
@@ -246,7 +267,25 @@ ul.task-list{list-style:none;padding-left:4px}
 <p><strong>Questions to ask any operator:</strong> Does your success rate mean Uhuru Peak? How many clients is it based on? Do you check oxygen saturation twice a day, and what's your turnaround policy? Do you carry bottled oxygen and a portable altitude chamber?</p>
 <h2>When to go</h2>
 <p><strong>September 2027 is the pick</strong>: reliably dry, after the July–August peak, and it leaves about nine months to train. Late January or February is equally good for weather, but February 2027 is only five months away, so <strong>Jan–Feb 2028</strong> is the realistic alternative.</p>
-<figure class="chart-wrap"><svg class="chart" viewBox="0 0 760 340" role="img" aria-label="Two dry windows: January to February and June to October"><text x="0" y="22" class="ct">Two dry windows: January to February and June to October</text><text x="0" y="44" class="cs">Average monthly rainfall at Kilimanjaro Airport (mm) · number above bar = conditions out of 5</text><line x1="56" x2="740" y1="280.0" y2="280.0" class="ax"/><text x="48" y="284.0" text-anchor="end" class="tk">0</text><line x1="56" x2="740" y1="210.0" y2="210.0" class="gr"/><text x="48" y="214.0" text-anchor="end" class="tk">50</text><line x1="56" x2="740" y1="140.0" y2="140.0" class="gr"/><text x="48" y="144.0" text-anchor="end" class="tk">100</text><line x1="56" x2="740" y1="70.0" y2="70.0" class="gr"/><text x="48" y="74.0" text-anchor="end" class="tk">150</text><rect x="66.8" y="219.8" width="35.3" height="60.2" class="bg"><title>Jan: 43 mm, conditions 5 out of 5</title></rect><text x="84.5" y="212.8" text-anchor="middle" class="lv">5</text><text x="84.5" y="298" text-anchor="middle" class="tk">Jan</text><rect x="123.8" y="225.4" width="35.3" height="54.6" class="bg"><title>Feb: 39 mm, conditions 5 out of 5</title></rect><text x="141.5" y="218.4" text-anchor="middle" class="lv">5</text><text x="141.5" y="298" text-anchor="middle" class="tk">Feb</text><rect x="180.8" y="148.4" width="35.3" height="131.6" class="bm"><title>Mar: 94 mm, conditions 3 out of 5</title></rect><text x="198.5" y="141.4" text-anchor="middle" class="lv">3</text><text x="198.5" y="298" text-anchor="middle" class="tk">Mar</text><rect x="237.8" y="95.2" width="35.3" height="184.8" class="bp"><title>Apr: 132 mm, conditions 1 out of 5</title></rect><text x="255.5" y="88.2" text-anchor="middle" class="lv">1</text><text x="255.5" y="298" text-anchor="middle" class="tk">Apr</text><rect x="294.8" y="177.8" width="35.3" height="102.2" class="bp"><title>May: 73 mm, conditions 1–2 out of 5</title></rect><text x="312.5" y="170.8" text-anchor="middle" class="lv">1–2</text><text x="312.5" y="298" text-anchor="middle" class="tk">May</text><rect x="351.8" y="267.4" width="35.3" height="12.6" class="bg"><title>Jun: 9 mm, conditions 4 out of 5</title></rect><text x="369.5" y="260.4" text-anchor="middle" class="lv">4</text><text x="369.5" y="298" text-anchor="middle" class="tk">Jun</text><rect x="408.8" y="275.1" width="35.3" height="4.9" class="bg"><title>Jul: 3.5 mm, conditions 4–5 out of 5</title></rect><text x="426.5" y="268.1" text-anchor="middle" class="lv">4–5</text><text x="426.5" y="298" text-anchor="middle" class="tk">Jul</text><rect x="465.8" y="271.6" width="35.3" height="8.4" class="bg"><title>Aug: 6 mm, conditions 4–5 out of 5</title></rect><text x="483.5" y="264.6" text-anchor="middle" class="lv">4–5</text><text x="483.5" y="298" text-anchor="middle" class="tk">Aug</text><rect x="522.8" y="273.0" width="35.3" height="7.0" class="bg"><title>Sep: 5 mm, conditions 5 out of 5</title></rect><text x="540.5" y="266.0" text-anchor="middle" class="lv">5</text><text x="540.5" y="298" text-anchor="middle" class="tk">Sep</text><rect x="579.8" y="245.0" width="35.3" height="35.0" class="bg"><title>Oct: 25 mm, conditions 4 out of 5</title></rect><text x="597.5" y="238.0" text-anchor="middle" class="lv">4</text><text x="597.5" y="298" text-anchor="middle" class="tk">Oct</text><rect x="636.8" y="208.6" width="35.3" height="71.4" class="bp"><title>Nov: 51 mm, conditions 2–3 out of 5</title></rect><text x="654.5" y="201.6" text-anchor="middle" class="lv">2–3</text><text x="654.5" y="298" text-anchor="middle" class="tk">Nov</text><rect x="693.8" y="217.0" width="35.3" height="63.0" class="bg"><title>Dec: 45 mm, conditions 4 out of 5</title></rect><text x="711.5" y="210.0" text-anchor="middle" class="lv">4</text><text x="711.5" y="298" text-anchor="middle" class="tk">Dec</text><text x="398.0" y="324" text-anchor="middle" class="tk">Green = good, amber = mixed, grey = rainy season. Rain: NOAA 1991–2020 normals; conditions score synthesised from operator guides.</text></svg></figure>
+<figure class="chart-wrap chart-d"><svg class="chart" viewBox="0 0 760 340" role="img" aria-label="Two dry windows: January to February and June to October"><text x="0" y="22" class="ct">Two dry windows: January to February and June to October</text><text x="0" y="44" class="cs">Average monthly rainfall at Kilimanjaro Airport (mm) · number above bar = conditions out of 5</text><line x1="56" x2="740" y1="280.0" y2="280.0" class="ax"/><text x="48" y="284.0" text-anchor="end" class="tk">0</text><line x1="56" x2="740" y1="210.0" y2="210.0" class="gr"/><text x="48" y="214.0" text-anchor="end" class="tk">50</text><line x1="56" x2="740" y1="140.0" y2="140.0" class="gr"/><text x="48" y="144.0" text-anchor="end" class="tk">100</text><line x1="56" x2="740" y1="70.0" y2="70.0" class="gr"/><text x="48" y="74.0" text-anchor="end" class="tk">150</text><rect x="66.8" y="219.8" width="35.3" height="60.2" class="bg"><title>Jan: 43 mm, conditions 5 out of 5</title></rect><text x="84.5" y="212.8" text-anchor="middle" class="lv">5</text><text x="84.5" y="298" text-anchor="middle" class="tk">Jan</text><rect x="123.8" y="225.4" width="35.3" height="54.6" class="bg"><title>Feb: 39 mm, conditions 5 out of 5</title></rect><text x="141.5" y="218.4" text-anchor="middle" class="lv">5</text><text x="141.5" y="298" text-anchor="middle" class="tk">Feb</text><rect x="180.8" y="148.4" width="35.3" height="131.6" class="bm"><title>Mar: 94 mm, conditions 3 out of 5</title></rect><text x="198.5" y="141.4" text-anchor="middle" class="lv">3</text><text x="198.5" y="298" text-anchor="middle" class="tk">Mar</text><rect x="237.8" y="95.2" width="35.3" height="184.8" class="bp"><title>Apr: 132 mm, conditions 1 out of 5</title></rect><text x="255.5" y="88.2" text-anchor="middle" class="lv">1</text><text x="255.5" y="298" text-anchor="middle" class="tk">Apr</text><rect x="294.8" y="177.8" width="35.3" height="102.2" class="bp"><title>May: 73 mm, conditions 1–2 out of 5</title></rect><text x="312.5" y="170.8" text-anchor="middle" class="lv">1–2</text><text x="312.5" y="298" text-anchor="middle" class="tk">May</text><rect x="351.8" y="267.4" width="35.3" height="12.6" class="bg"><title>Jun: 9 mm, conditions 4 out of 5</title></rect><text x="369.5" y="260.4" text-anchor="middle" class="lv">4</text><text x="369.5" y="298" text-anchor="middle" class="tk">Jun</text><rect x="408.8" y="275.1" width="35.3" height="4.9" class="bg"><title>Jul: 3.5 mm, conditions 4–5 out of 5</title></rect><text x="426.5" y="268.1" text-anchor="middle" class="lv">4–5</text><text x="426.5" y="298" text-anchor="middle" class="tk">Jul</text><rect x="465.8" y="271.6" width="35.3" height="8.4" class="bg"><title>Aug: 6 mm, conditions 4–5 out of 5</title></rect><text x="483.5" y="264.6" text-anchor="middle" class="lv">4–5</text><text x="483.5" y="298" text-anchor="middle" class="tk">Aug</text><rect x="522.8" y="273.0" width="35.3" height="7.0" class="bg"><title>Sep: 5 mm, conditions 5 out of 5</title></rect><text x="540.5" y="266.0" text-anchor="middle" class="lv">5</text><text x="540.5" y="298" text-anchor="middle" class="tk">Sep</text><rect x="579.8" y="245.0" width="35.3" height="35.0" class="bg"><title>Oct: 25 mm, conditions 4 out of 5</title></rect><text x="597.5" y="238.0" text-anchor="middle" class="lv">4</text><text x="597.5" y="298" text-anchor="middle" class="tk">Oct</text><rect x="636.8" y="208.6" width="35.3" height="71.4" class="bp"><title>Nov: 51 mm, conditions 2–3 out of 5</title></rect><text x="654.5" y="201.6" text-anchor="middle" class="lv">2–3</text><text x="654.5" y="298" text-anchor="middle" class="tk">Nov</text><rect x="693.8" y="217.0" width="35.3" height="63.0" class="bg"><title>Dec: 45 mm, conditions 4 out of 5</title></rect><text x="711.5" y="210.0" text-anchor="middle" class="lv">4</text><text x="711.5" y="298" text-anchor="middle" class="tk">Dec</text><text x="398.0" y="324" text-anchor="middle" class="tk">Green = good, amber = mixed, grey = rainy season. Rain: NOAA 1991–2020 normals; conditions score synthesised from operator guides.</text></svg></figure>
+<figure class="chart-wrap chart-m" aria-label="Two dry windows: January to February and June to October">
+<figcaption><strong class="ct">Two dry windows: January to February and June to October</strong><span class="cs">Average monthly rainfall at Kilimanjaro Airport (mm), then conditions out of 5</span></figcaption>
+<ol class="mbars">
+<li><span>Jan</span><span class="mb-track"><span class="mb-bar bg" style="width:28.7%"></span></span><span class="num">43 mm</span><span class="num">5</span></li>
+<li><span>Feb</span><span class="mb-track"><span class="mb-bar bg" style="width:26.0%"></span></span><span class="num">39 mm</span><span class="num">5</span></li>
+<li><span>Mar</span><span class="mb-track"><span class="mb-bar bm" style="width:62.7%"></span></span><span class="num">94 mm</span><span class="num">3</span></li>
+<li><span>Apr</span><span class="mb-track"><span class="mb-bar bp" style="width:88.0%"></span></span><span class="num">132 mm</span><span class="num">1</span></li>
+<li><span>May</span><span class="mb-track"><span class="mb-bar bp" style="width:48.7%"></span></span><span class="num">73 mm</span><span class="num">1–2</span></li>
+<li><span>Jun</span><span class="mb-track"><span class="mb-bar bg" style="width:6.0%"></span></span><span class="num">9 mm</span><span class="num">4</span></li>
+<li><span>Jul</span><span class="mb-track"><span class="mb-bar bg" style="width:2.3%"></span></span><span class="num">3.5 mm</span><span class="num">4–5</span></li>
+<li><span>Aug</span><span class="mb-track"><span class="mb-bar bg" style="width:4.0%"></span></span><span class="num">6 mm</span><span class="num">4–5</span></li>
+<li><span>Sep</span><span class="mb-track"><span class="mb-bar bg" style="width:3.3%"></span></span><span class="num">5 mm</span><span class="num">5</span></li>
+<li><span>Oct</span><span class="mb-track"><span class="mb-bar bg" style="width:16.7%"></span></span><span class="num">25 mm</span><span class="num">4</span></li>
+<li><span>Nov</span><span class="mb-track"><span class="mb-bar bp" style="width:34.0%"></span></span><span class="num">51 mm</span><span class="num">2–3</span></li>
+<li><span>Dec</span><span class="mb-track"><span class="mb-bar bg" style="width:30.0%"></span></span><span class="num">45 mm</span><span class="num">4</span></li>
+</ol>
+<p class="tk">Green = good, amber = mixed, grey = rainy season. Rain: NOAA 1991–2020 normals; conditions score synthesised from operator guides.</p>
+</figure>
 <div class="tw"><table>
 <thead>
 <tr>
@@ -259,67 +298,67 @@ ul.task-list{list-style:none;padding-left:4px}
 </thead>
 <tbody>
 <tr>
-<td>Jan–Feb</td>
-<td>Short dry season</td>
-<td>−10 to −20°C (warmest months)</td>
-<td>Busy at New Year, then moderate</td>
-<td>Excellent; pairs with the Serengeti calving season</td>
+<td data-label="Period">Jan–Feb</td>
+<td data-label="Season">Short dry season</td>
+<td data-label="Summit-night temperature">−10 to −20°C (warmest months)</td>
+<td data-label="Crowds">Busy at New Year, then moderate</td>
+<td data-label="Verdict for Dad">Excellent; pairs with the Serengeti calving season</td>
 </tr>
 <tr>
-<td>Mar</td>
-<td>Long rains begin late in the month</td>
-<td>−8 to −18°C</td>
-<td>Low</td>
-<td>Risky; Easter 2027 is 28 March</td>
+<td data-label="Period">Mar</td>
+<td data-label="Season">Long rains begin late in the month</td>
+<td data-label="Summit-night temperature">−8 to −18°C</td>
+<td data-label="Crowds">Low</td>
+<td data-label="Verdict for Dad">Risky; Easter 2027 is 28 March</td>
 </tr>
 <tr>
-<td>Apr–May</td>
-<td>Long rains</td>
-<td>−8 to −16°C, most snow</td>
-<td>Very low</td>
-<td>Avoid</td>
+<td data-label="Period">Apr–May</td>
+<td data-label="Season">Long rains</td>
+<td data-label="Summit-night temperature">−8 to −16°C, most snow</td>
+<td data-label="Crowds">Very low</td>
+<td data-label="Verdict for Dad">Avoid</td>
 </tr>
 <tr>
-<td>Jun</td>
-<td>Long dry season begins</td>
-<td>−10 to −20°C</td>
-<td>Moderate, rising</td>
-<td>Good</td>
+<td data-label="Period">Jun</td>
+<td data-label="Season">Long dry season begins</td>
+<td data-label="Summit-night temperature">−10 to −20°C</td>
+<td data-label="Crowds">Moderate, rising</td>
+<td data-label="Verdict for Dad">Good</td>
 </tr>
 <tr>
-<td>Jul–Aug</td>
-<td>Long dry season</td>
-<td>−15 to −25°C (coldest)</td>
-<td>Busiest; UK school holidays, dearest flights</td>
-<td>Good weather, but crowded and pricey</td>
+<td data-label="Period">Jul–Aug</td>
+<td data-label="Season">Long dry season</td>
+<td data-label="Summit-night temperature">−15 to −25°C (coldest)</td>
+<td data-label="Crowds">Busiest; UK school holidays, dearest flights</td>
+<td data-label="Verdict for Dad">Good weather, but crowded and pricey</td>
 </tr>
 <tr>
-<td><strong>Sep</strong></td>
-<td>Long dry season</td>
-<td>−12 to −22°C</td>
-<td>Moderate</td>
-<td><strong>Best overall</strong></td>
+<td data-label="Period"><strong>Sep</strong></td>
+<td data-label="Season">Long dry season</td>
+<td data-label="Summit-night temperature">−12 to −22°C</td>
+<td data-label="Crowds">Moderate</td>
+<td data-label="Verdict for Dad"><strong>Best overall</strong></td>
 </tr>
 <tr>
-<td>Oct</td>
-<td>Dry; short rains may start late</td>
-<td>−10 to −20°C</td>
-<td>Moderate to low</td>
-<td>Good, especially early October</td>
+<td data-label="Period">Oct</td>
+<td data-label="Season">Dry; short rains may start late</td>
+<td data-label="Summit-night temperature">−10 to −20°C</td>
+<td data-label="Crowds">Moderate to low</td>
+<td data-label="Verdict for Dad">Good, especially early October</td>
 </tr>
 <tr>
-<td>Nov</td>
-<td>Short rains</td>
-<td>−10 to −18°C, snow likely</td>
-<td>Very low</td>
-<td>Only on the drier Rongai route</td>
+<td data-label="Period">Nov</td>
+<td data-label="Season">Short rains</td>
+<td data-label="Summit-night temperature">−10 to −18°C, snow likely</td>
+<td data-label="Crowds">Very low</td>
+<td data-label="Verdict for Dad">Only on the drier Rongai route</td>
 </tr>
 <tr>
-<td>Dec</td>
-<td>Rains ease</td>
-<td>−10 to −20°C</td>
-<td>Very busy at Christmas</td>
-<td>Good early in the month</td>
+<td data-label="Period">Dec</td>
+<td data-label="Season">Rains ease</td>
+<td data-label="Summit-night temperature">−10 to −20°C</td>
+<td data-label="Crowds">Very busy at Christmas</td>
+<td data-label="Verdict for Dad">Good early in the month</td>
 </tr>
 </tbody>
 </table></div>
@@ -353,74 +392,74 @@ ul.task-list{list-style:none;padding-left:4px}
 </thead>
 <tbody>
 <tr>
-<td><a href="https://www.kandooadventures.com/faqs" target="_blank" rel="noopener">Kandoo</a>, Lemosho 8 days</td>
-<td>Group, twin share</td>
-<td>£2,399</td>
-<td>£4,798</td>
-<td>Optional supplement; no forced solo charge</td>
+<td data-label="Operator and trip"><a href="https://www.kandooadventures.com/faqs" target="_blank" rel="noopener">Kandoo</a>, Lemosho 8 days</td>
+<td data-label="How it&#x27;s priced">Group, twin share</td>
+<td data-label="Each, sharing">£2,399</td>
+<td data-label="Climb for you both">£4,798</td>
+<td data-label="If you&#x27;d rather not share">Optional supplement; no forced solo charge</td>
 </tr>
 <tr>
-<td><a href="https://www.muchbetteradventures.com/products/10799-adventures-climb-kilimanjaro-lemosho-route/" target="_blank" rel="noopener">Much Better Adventures</a>, Lemosho 8 days</td>
-<td>Group, twin share</td>
-<td>from £2,349</td>
-<td>from £4,698</td>
-<td>Optional private room and tent upgrade</td>
+<td data-label="Operator and trip"><a href="https://www.muchbetteradventures.com/products/10799-adventures-climb-kilimanjaro-lemosho-route/" target="_blank" rel="noopener">Much Better Adventures</a>, Lemosho 8 days</td>
+<td data-label="How it&#x27;s priced">Group, twin share</td>
+<td data-label="Each, sharing">from £2,349</td>
+<td data-label="Climb for you both">from £4,698</td>
+<td data-label="If you&#x27;d rather not share">Optional private room and tent upgrade</td>
 </tr>
 <tr>
-<td><a href="https://www.actionchallenge.com/overseas-trips/lemosho/" target="_blank" rel="noopener">Action Challenge</a>, Lemosho (7 trekking days)</td>
-<td>Group, twin share</td>
-<td>£2,895 land, £3,695 with flights</td>
-<td>£5,790 land, £7,390 with flights</td>
-<td>Upgrade available, price on request</td>
+<td data-label="Operator and trip"><a href="https://www.actionchallenge.com/overseas-trips/lemosho/" target="_blank" rel="noopener">Action Challenge</a>, Lemosho (7 trekking days)</td>
+<td data-label="How it&#x27;s priced">Group, twin share</td>
+<td data-label="Each, sharing">£2,895 land, £3,695 with flights</td>
+<td data-label="Climb for you both">£5,790 land, £7,390 with flights</td>
+<td data-label="If you&#x27;d rather not share">Upgrade available, price on request</td>
 </tr>
 <tr>
-<td><a href="https://www.ultimatekilimanjaro.com/dates-prices-2027/" target="_blank" rel="noopener">Ultimate Kilimanjaro</a>, Northern Circuit 9 days</td>
-<td>Group, double occupancy</td>
-<td>$3,649 (≈ £2,720)</td>
-<td>≈ £5,450</td>
-<td>$299 per person</td>
+<td data-label="Operator and trip"><a href="https://www.ultimatekilimanjaro.com/dates-prices-2027/" target="_blank" rel="noopener">Ultimate Kilimanjaro</a>, Northern Circuit 9 days</td>
+<td data-label="How it&#x27;s priced">Group, double occupancy</td>
+<td data-label="Each, sharing">$3,649 (≈ £2,720)</td>
+<td data-label="Climb for you both">≈ £5,450</td>
+<td data-label="If you&#x27;d rather not share">$299 per person</td>
 </tr>
 <tr>
-<td><a href="https://www.ultimatekilimanjaro.com/private-kilimanjaro-climbs/" target="_blank" rel="noopener">Ultimate Kilimanjaro</a>, Lemosho 8 days private</td>
-<td>Private, 2-person rate</td>
-<td>$4,099 (≈ £3,060)</td>
-<td>≈ £6,120</td>
-<td>$299 per person</td>
+<td data-label="Operator and trip"><a href="https://www.ultimatekilimanjaro.com/private-kilimanjaro-climbs/" target="_blank" rel="noopener">Ultimate Kilimanjaro</a>, Lemosho 8 days private</td>
+<td data-label="How it&#x27;s priced">Private, 2-person rate</td>
+<td data-label="Each, sharing">$4,099 (≈ £3,060)</td>
+<td data-label="Climb for you both">≈ £6,120</td>
+<td data-label="If you&#x27;d rather not share">$299 per person</td>
 </tr>
 <tr>
-<td><a href="https://altezzatravel.com/climbing-kilimanjaro/price" target="_blank" rel="noopener">Altezza</a>, Lemosho 8 days private</td>
-<td>Private, 2-person rate, shared room</td>
-<td>$3,937 (≈ £2,940)</td>
-<td>≈ £5,880</td>
-<td>Single supplement on request</td>
+<td data-label="Operator and trip"><a href="https://altezzatravel.com/climbing-kilimanjaro/price" target="_blank" rel="noopener">Altezza</a>, Lemosho 8 days private</td>
+<td data-label="How it&#x27;s priced">Private, 2-person rate, shared room</td>
+<td data-label="Each, sharing">$3,937 (≈ £2,940)</td>
+<td data-label="Climb for you both">≈ £5,880</td>
+<td data-label="If you&#x27;d rather not share">Single supplement on request</td>
 </tr>
 <tr>
-<td><a href="https://www.gadventures.com/trips/mt-kilimanjaro-trek-lemosho-route/DTKL/" target="_blank" rel="noopener">G Adventures</a>, Lemosho 8 days</td>
-<td>Group, per person</td>
-<td>$3,899 (≈ £2,910)</td>
-<td>≈ £5,820</td>
-<td>"My Own Room" from $819</td>
+<td data-label="Operator and trip"><a href="https://www.gadventures.com/trips/mt-kilimanjaro-trek-lemosho-route/DTKL/" target="_blank" rel="noopener">G Adventures</a>, Lemosho 8 days</td>
+<td data-label="How it&#x27;s priced">Group, per person</td>
+<td data-label="Each, sharing">$3,899 (≈ £2,910)</td>
+<td data-label="Climb for you both">≈ £5,820</td>
+<td data-label="If you&#x27;d rather not share">"My Own Room" from $819</td>
 </tr>
 <tr>
-<td><a href="https://www.exodus.co.uk/trips/tanzania-holidays/walking/kilimanjaro-climb-lemosho-route/tyr" target="_blank" rel="noopener">Exodus</a>, Lemosho 10-day trip</td>
-<td>Group, twin share</td>
-<td>£3,812–£4,259 (Jan 2027: £4,020)</td>
-<td>£7,624–£8,518</td>
-<td>£425 per person</td>
+<td data-label="Operator and trip"><a href="https://www.exodus.co.uk/trips/tanzania-holidays/walking/kilimanjaro-climb-lemosho-route/tyr" target="_blank" rel="noopener">Exodus</a>, Lemosho 10-day trip</td>
+<td data-label="How it&#x27;s priced">Group, twin share</td>
+<td data-label="Each, sharing">£3,812–£4,259 (Jan 2027: £4,020)</td>
+<td data-label="Climb for you both">£7,624–£8,518</td>
+<td data-label="If you&#x27;d rather not share">£425 per person</td>
 </tr>
 <tr>
-<td><a href="https://zaratanzaniaadventures.com/prices-2026/" target="_blank" rel="noopener">Zara Tours</a>, Lemosho 8 days</td>
-<td>Group, double or triple occupancy</td>
-<td>$2,251 (≈ £1,680)</td>
-<td>≈ £3,360</td>
-<td>$76 per person</td>
+<td data-label="Operator and trip"><a href="https://zaratanzaniaadventures.com/prices-2026/" target="_blank" rel="noopener">Zara Tours</a>, Lemosho 8 days</td>
+<td data-label="How it&#x27;s priced">Group, double or triple occupancy</td>
+<td data-label="Each, sharing">$2,251 (≈ £1,680)</td>
+<td data-label="Climb for you both">≈ £3,360</td>
+<td data-label="If you&#x27;d rather not share">$76 per person</td>
 </tr>
 <tr>
-<td><a href="https://www.tusker.com/kilimanjaro/climb-lemosho-route/" target="_blank" rel="noopener">Tusker Trail</a>, Lemosho 9 days</td>
-<td>Per person; sharing basis not stated</td>
-<td>$6,490 (≈ £4,840)</td>
-<td>≈ £9,690</td>
-<td>Ask</td>
+<td data-label="Operator and trip"><a href="https://www.tusker.com/kilimanjaro/climb-lemosho-route/" target="_blank" rel="noopener">Tusker Trail</a>, Lemosho 9 days</td>
+<td data-label="How it&#x27;s priced">Per person; sharing basis not stated</td>
+<td data-label="Each, sharing">$6,490 (≈ £4,840)</td>
+<td data-label="Climb for you both">≈ £9,690</td>
+<td data-label="If you&#x27;d rather not share">Ask</td>
 </tr>
 </tbody>
 </table></div>
@@ -438,32 +477,32 @@ ul.task-list{list-style:none;padding-left:4px}
 </thead>
 <tbody>
 <tr>
-<td><a href="https://altezzatravel.com/climbing-kilimanjaro/price" target="_blank" rel="noopener">Altezza Travel</a></td>
-<td>Private climbs priced by group size: Lemosho 8 days $3,937 each for two ($3,112 each for 8+); Northern Circuit 8 days $3,959 each for two</td>
-<td>Park fees, 2 hotel nights, transfers</td>
-<td>Oxygen, twice-daily health checks, all guides first-aid trained, in-house doctor, KPAP member; <a href="https://www.trustpilot.com/review/altezzatravel.com" target="_blank" rel="noopener">4.9 Trustpilot</a></td>
-<td>Price rises for small groups</td>
+<td data-label="Operator"><a href="https://altezzatravel.com/climbing-kilimanjaro/price" target="_blank" rel="noopener">Altezza Travel</a></td>
+<td data-label="Example trip and price">Private climbs priced by group size: Lemosho 8 days $3,937 each for two ($3,112 each for 8+); Northern Circuit 8 days $3,959 each for two</td>
+<td data-label="Included">Park fees, 2 hotel nights, transfers</td>
+<td data-label="Safety and reputation">Oxygen, twice-daily health checks, all guides first-aid trained, in-house doctor, KPAP member; <a href="https://www.trustpilot.com/review/altezzatravel.com" target="_blank" rel="noopener">4.9 Trustpilot</a></td>
+<td data-label="Watch out for">Price rises for small groups</td>
 </tr>
 <tr>
-<td><a href="https://www.ultimatekilimanjaro.com/dates-prices-2027/" target="_blank" rel="noopener">Ultimate Kilimanjaro</a></td>
-<td>Group: Lemosho 8 days $3,299, Northern Circuit 9 days $3,649. Private for two: $4,099 and $4,599 each (2026–27 prices)</td>
-<td>Park fees, 2 hotel nights</td>
-<td>KPAP partner, private toilet, daily health checks; option to summit in daylight</td>
-<td>Safety details page unavailable, so confirm oximeter and chamber</td>
+<td data-label="Operator"><a href="https://www.ultimatekilimanjaro.com/dates-prices-2027/" target="_blank" rel="noopener">Ultimate Kilimanjaro</a></td>
+<td data-label="Example trip and price">Group: Lemosho 8 days $3,299, Northern Circuit 9 days $3,649. Private for two: $4,099 and $4,599 each (2026–27 prices)</td>
+<td data-label="Included">Park fees, 2 hotel nights</td>
+<td data-label="Safety and reputation">KPAP partner, private toilet, daily health checks; option to summit in daylight</td>
+<td data-label="Watch out for">Safety details page unavailable, so confirm oximeter and chamber</td>
 </tr>
 <tr>
-<td><a href="https://www.tranquilkilimanjaro.com/how-much-does-it-really-cost-to-climb-kilimanjaro-in-2026-honest-price-breakdown-value-guide/" target="_blank" rel="noopener">Tranquil Kilimanjaro</a></td>
-<td>Lemosho 8 days $2,350; Northern Circuit 9 days $2,545</td>
-<td>Park fees</td>
-<td>Not stated online</td>
-<td>Confirm what's included and the safety kit</td>
+<td data-label="Operator"><a href="https://www.tranquilkilimanjaro.com/how-much-does-it-really-cost-to-climb-kilimanjaro-in-2026-honest-price-breakdown-value-guide/" target="_blank" rel="noopener">Tranquil Kilimanjaro</a></td>
+<td data-label="Example trip and price">Lemosho 8 days $2,350; Northern Circuit 9 days $2,545</td>
+<td data-label="Included">Park fees</td>
+<td data-label="Safety and reputation">Not stated online</td>
+<td data-label="Watch out for">Confirm what's included and the safety kit</td>
 </tr>
 <tr>
-<td><a href="https://zaratanzaniaadventures.com/prices-2026/" target="_blank" rel="noopener">Zara Tours</a></td>
-<td>Lemosho 8 days $2,251 (group)</td>
-<td>Park fees, hotel</td>
-<td>Large, long-established</td>
-<td><strong>Oxygen and altitude chamber cost extra</strong> — a red flag at 60</td>
+<td data-label="Operator"><a href="https://zaratanzaniaadventures.com/prices-2026/" target="_blank" rel="noopener">Zara Tours</a></td>
+<td data-label="Example trip and price">Lemosho 8 days $2,251 (group)</td>
+<td data-label="Included">Park fees, hotel</td>
+<td data-label="Safety and reputation">Large, long-established</td>
+<td data-label="Watch out for"><strong>Oxygen and altitude chamber cost extra</strong> — a red flag at 60</td>
 </tr>
 </tbody>
 </table></div>
@@ -480,46 +519,46 @@ ul.task-list{list-style:none;padding-left:4px}
 </thead>
 <tbody>
 <tr>
-<td><a href="https://www.kandooadventures.com/destination-kilimanjaro/trip-kilimanjaro-lemosho-route/TZLM" target="_blank" rel="noopener">Kandoo Adventures</a> (UK)</td>
-<td>Lemosho, 8 days on the mountain: <strong>£2,399</strong></td>
-<td>Hotels, transfers, park fees</td>
-<td>Oxygen, daily oxygen checks, private toilet, KPAP since 2009, health check required; <a href="https://uk.trustpilot.com/review/www.kandooadventures.com" target="_blank" rel="noopener">4.9 Trustpilot, 1,230 reviews</a></td>
-<td>Ask the maximum group size</td>
+<td data-label="Operator"><a href="https://www.kandooadventures.com/destination-kilimanjaro/trip-kilimanjaro-lemosho-route/TZLM" target="_blank" rel="noopener">Kandoo Adventures</a> (UK)</td>
+<td data-label="Example trip and price">Lemosho, 8 days on the mountain: <strong>£2,399</strong></td>
+<td data-label="Included">Hotels, transfers, park fees</td>
+<td data-label="Safety and reputation">Oxygen, daily oxygen checks, private toilet, KPAP since 2009, health check required; <a href="https://uk.trustpilot.com/review/www.kandooadventures.com" target="_blank" rel="noopener">4.9 Trustpilot, 1,230 reviews</a></td>
+<td data-label="Watch out for">Ask the maximum group size</td>
 </tr>
 <tr>
-<td><a href="https://www.muchbetteradventures.com/products/10799-adventures-climb-kilimanjaro-lemosho-route/" target="_blank" rel="noopener">Much Better Adventures</a></td>
-<td>Lemosho, from £2,349</td>
-<td>Transfers, 2 hotel nights, park fees</td>
-<td>Oxygen, max 12 people</td>
-<td>Exact 2027 price not shown</td>
+<td data-label="Operator"><a href="https://www.muchbetteradventures.com/products/10799-adventures-climb-kilimanjaro-lemosho-route/" target="_blank" rel="noopener">Much Better Adventures</a></td>
+<td data-label="Example trip and price">Lemosho, from £2,349</td>
+<td data-label="Included">Transfers, 2 hotel nights, park fees</td>
+<td data-label="Safety and reputation">Oxygen, max 12 people</td>
+<td data-label="Watch out for">Exact 2027 price not shown</td>
 </tr>
 <tr>
-<td><a href="https://www.gadventures.com/trips/mt-kilimanjaro-trek-lemosho-route/DTKL/" target="_blank" rel="noopener">G Adventures</a></td>
-<td>Lemosho 10-day trip from $3,899 (sale; usually $5,199)</td>
-<td>2 hotel nights, park fees</td>
-<td>Medical form, max 12</td>
-<td><strong>Oxygen and chamber are rentals, not included</strong></td>
+<td data-label="Operator"><a href="https://www.gadventures.com/trips/mt-kilimanjaro-trek-lemosho-route/DTKL/" target="_blank" rel="noopener">G Adventures</a></td>
+<td data-label="Example trip and price">Lemosho 10-day trip from $3,899 (sale; usually $5,199)</td>
+<td data-label="Included">2 hotel nights, park fees</td>
+<td data-label="Safety and reputation">Medical form, max 12</td>
+<td data-label="Watch out for"><strong>Oxygen and chamber are rentals, not included</strong></td>
 </tr>
 <tr>
-<td><a href="https://www.intrepidtravel.com/uk/kilimanjaro" target="_blank" rel="noopener">Intrepid</a></td>
-<td>Machame or Marangu 8-day trip, £2,195</td>
-<td>Park fees, oxygen</td>
-<td>1 guide per 2 climbers</td>
-<td>No Lemosho; shorter time on the mountain</td>
+<td data-label="Operator"><a href="https://www.intrepidtravel.com/uk/kilimanjaro" target="_blank" rel="noopener">Intrepid</a></td>
+<td data-label="Example trip and price">Machame or Marangu 8-day trip, £2,195</td>
+<td data-label="Included">Park fees, oxygen</td>
+<td data-label="Safety and reputation">1 guide per 2 climbers</td>
+<td data-label="Watch out for">No Lemosho; shorter time on the mountain</td>
 </tr>
 <tr>
-<td><a href="https://www.actionchallenge.com/overseas-trips/lemosho/" target="_blank" rel="noopener">Action Challenge</a> (UK)</td>
-<td>Lemosho 11-day trip, 2027: £2,895 land only or £3,695 with UK flights (£2,995 / £4,095 late July and late August)</td>
-<td>Flights optional</td>
-<td>UK Mountain Leader and UK medic on the trip</td>
-<td>Big groups, often around 20</td>
+<td data-label="Operator"><a href="https://www.actionchallenge.com/overseas-trips/lemosho/" target="_blank" rel="noopener">Action Challenge</a> (UK)</td>
+<td data-label="Example trip and price">Lemosho 11-day trip, 2027: £2,895 land only or £3,695 with UK flights (£2,995 / £4,095 late July and late August)</td>
+<td data-label="Included">Flights optional</td>
+<td data-label="Safety and reputation">UK Mountain Leader and UK medic on the trip</td>
+<td data-label="Watch out for">Big groups, often around 20</td>
 </tr>
 <tr>
-<td><a href="https://www.exodus.co.uk/trips/tanzania-holidays/walking/kilimanjaro-climb-lemosho-route/tyr" target="_blank" rel="noopener">Exodus</a> (UK)</td>
-<td>Lemosho 10-day trip, £3,812–£4,259</td>
-<td>2 lodge nights, park fees</td>
-<td>1 guide per 2 on summit day, private toilet, KPAP partner</td>
-<td>Pricey for what's included; solo supplement £425–£450</td>
+<td data-label="Operator"><a href="https://www.exodus.co.uk/trips/tanzania-holidays/walking/kilimanjaro-climb-lemosho-route/tyr" target="_blank" rel="noopener">Exodus</a> (UK)</td>
+<td data-label="Example trip and price">Lemosho 10-day trip, £3,812–£4,259</td>
+<td data-label="Included">2 lodge nights, park fees</td>
+<td data-label="Safety and reputation">1 guide per 2 on summit day, private toilet, KPAP partner</td>
+<td data-label="Watch out for">Pricey for what's included; solo supplement £425–£450</td>
 </tr>
 </tbody>
 </table></div>
@@ -534,29 +573,29 @@ ul.task-list{list-style:none;padding-left:4px}
 </thead>
 <tbody>
 <tr>
-<td><a href="https://www.tusker.com/kilimanjaro/climb-lemosho-route/" target="_blank" rel="noopener">Tusker Trail</a> (US)</td>
-<td>Lemosho, 9 days climbing: $6,490</td>
-<td>The strongest medical set-up found: medically trained guides, pre-climb health benchmarks, oxygen and altitude chamber, medically trained guides, daytime summit, evacuation insurance included</td>
+<td data-label="Operator"><a href="https://www.tusker.com/kilimanjaro/climb-lemosho-route/" target="_blank" rel="noopener">Tusker Trail</a> (US)</td>
+<td data-label="Example trip and price">Lemosho, 9 days climbing: $6,490</td>
+<td data-label="Why it stands out">The strongest medical set-up found: medically trained guides, pre-climb health benchmarks, oxygen and altitude chamber, medically trained guides, daytime summit, evacuation insurance included</td>
 </tr>
 <tr>
-<td><a href="https://www.thomsontreks.com/find-your-trek/" target="_blank" rel="noopener">Thomson Treks</a> (US)</td>
-<td>Western Approach, 9 days: from $6,790</td>
-<td>A first-aid-certified guide for every 2–3 climbers; claims 98% success on its 9-day route</td>
+<td data-label="Operator"><a href="https://www.thomsontreks.com/find-your-trek/" target="_blank" rel="noopener">Thomson Treks</a> (US)</td>
+<td data-label="Example trip and price">Western Approach, 9 days: from $6,790</td>
+<td data-label="Why it stands out">A first-aid-certified guide for every 2–3 climbers; claims 98% success on its 9-day route</td>
 </tr>
 <tr>
-<td><a href="https://www.keadventure.com/holidays/tanzania-trekking-kilimanjaro-lemosho" target="_blank" rel="noopener">KE Adventure</a> (UK)</td>
-<td>Lemosho 10-day trip, from £3,825</td>
-<td>Oxygen and altitude chamber included, 1 guide per 2, max 14, solo supplement only £50</td>
+<td data-label="Operator"><a href="https://www.keadventure.com/holidays/tanzania-trekking-kilimanjaro-lemosho" target="_blank" rel="noopener">KE Adventure</a> (UK)</td>
+<td data-label="Example trip and price">Lemosho 10-day trip, from £3,825</td>
+<td data-label="Why it stands out">Oxygen and altitude chamber included, 1 guide per 2, max 14, solo supplement only £50</td>
 </tr>
 <tr>
-<td><a href="https://www.jagged-globe.co.uk/trek/kilimanjaro.html" target="_blank" rel="noopener">Jagged Globe</a> (UK)</td>
-<td>Mount Meru then Lemosho, 11 nights: from £2,895 (shown reduced from £3,895)</td>
-<td>Acclimatises on Mount Meru first, the best preparation available</td>
+<td data-label="Operator"><a href="https://www.jagged-globe.co.uk/trek/kilimanjaro.html" target="_blank" rel="noopener">Jagged Globe</a> (UK)</td>
+<td data-label="Example trip and price">Mount Meru then Lemosho, 11 nights: from £2,895 (shown reduced from £3,895)</td>
+<td data-label="Why it stands out">Acclimatises on Mount Meru first, the best preparation available</td>
 </tr>
 <tr>
-<td><a href="https://iantaylortrekking.com/blog/ian-taylor-trekking-prices/" target="_blank" rel="noopener">Ian Taylor Trekking</a> (US)</td>
-<td>Lemosho 8 days, from $3,850</td>
-<td>Max 10 people, daily medical checks; claims 98% on Lemosho across 1,240 clients</td>
+<td data-label="Operator"><a href="https://iantaylortrekking.com/blog/ian-taylor-trekking-prices/" target="_blank" rel="noopener">Ian Taylor Trekking</a> (US)</td>
+<td data-label="Example trip and price">Lemosho 8 days, from $3,850</td>
+<td data-label="Why it stands out">Max 10 people, daily medical checks; claims 98% on Lemosho across 1,240 clients</td>
 </tr>
 </tbody>
 </table></div>
@@ -575,67 +614,67 @@ ul.task-list{list-style:none;padding-left:4px}
 </thead>
 <tbody>
 <tr>
-<td>Climb, 8–9 days, sharing</td>
-<td>£1,680–£2,940</td>
-<td>£2,399</td>
-<td>£2,900–£4,260</td>
-<td>≈ £4,840</td>
+<td data-label="Item (per person)">Climb, 8–9 days, sharing</td>
+<td data-label="Budget local (Zara group to Altezza private for two)">£1,680–£2,940</td>
+<td data-label="Mid-range (Kandoo)">£2,399</td>
+<td data-label="Upper mid (KE, Jagged Globe, Exodus)">£2,900–£4,260</td>
+<td data-label="Premium (Tusker Trail)">≈ £4,840</td>
 </tr>
 <tr>
-<td>Return flight London–Kilimanjaro</td>
-<td>£600–£1,000</td>
-<td>£600–£1,000</td>
-<td>£600–£1,000</td>
-<td>£600–£1,000</td>
+<td data-label="Item (per person)">Return flight London–Kilimanjaro</td>
+<td data-label="Budget local (Zara group to Altezza private for two)">£600–£1,000</td>
+<td data-label="Mid-range (Kandoo)">£600–£1,000</td>
+<td data-label="Upper mid (KE, Jagged Globe, Exodus)">£600–£1,000</td>
+<td data-label="Premium (Tusker Trail)">£600–£1,000</td>
 </tr>
 <tr>
-<td>Tips for the crew (cash, in US$)</td>
-<td>£225–£330</td>
-<td>£225–£330</td>
-<td>£225–£330</td>
-<td>£225–£330</td>
+<td data-label="Item (per person)">Tips for the crew (cash, in US$)</td>
+<td data-label="Budget local (Zara group to Altezza private for two)">£225–£330</td>
+<td data-label="Mid-range (Kandoo)">£225–£330</td>
+<td data-label="Upper mid (KE, Jagged Globe, Exodus)">£225–£330</td>
+<td data-label="Premium (Tusker Trail)">£225–£330</td>
 </tr>
 <tr>
-<td>Tanzania e-visa ($50)</td>
-<td>£37</td>
-<td>£37</td>
-<td>£37</td>
-<td>£37</td>
+<td data-label="Item (per person)">Tanzania e-visa ($50)</td>
+<td data-label="Budget local (Zara group to Altezza private for two)">£37</td>
+<td data-label="Mid-range (Kandoo)">£37</td>
+<td data-label="Upper mid (KE, Jagged Globe, Exodus)">£37</td>
+<td data-label="Premium (Tusker Trail)">£37</td>
 </tr>
 <tr>
-<td>Travel insurance to 6,000 m</td>
-<td>£150–£350</td>
-<td>£150–£350</td>
-<td>£150–£350</td>
-<td>£150–£350 (evacuation cover included)</td>
+<td data-label="Item (per person)">Travel insurance to 6,000 m</td>
+<td data-label="Budget local (Zara group to Altezza private for two)">£150–£350</td>
+<td data-label="Mid-range (Kandoo)">£150–£350</td>
+<td data-label="Upper mid (KE, Jagged Globe, Exodus)">£150–£350</td>
+<td data-label="Premium (Tusker Trail)">£150–£350 (evacuation cover included)</td>
 </tr>
 <tr>
-<td>Malaria tablets and jabs</td>
-<td>£100–£200</td>
-<td>£100–£200</td>
-<td>£100–£200</td>
-<td>£100–£200</td>
+<td data-label="Item (per person)">Malaria tablets and jabs</td>
+<td data-label="Budget local (Zara group to Altezza private for two)">£100–£200</td>
+<td data-label="Mid-range (Kandoo)">£100–£200</td>
+<td data-label="Upper mid (KE, Jagged Globe, Exodus)">£100–£200</td>
+<td data-label="Premium (Tusker Trail)">£100–£200</td>
 </tr>
 <tr>
-<td>Kit (buy or hire)</td>
-<td>£200–£400</td>
-<td>£200–£400</td>
-<td>£200–£400</td>
-<td>£200–£400</td>
+<td data-label="Item (per person)">Kit (buy or hire)</td>
+<td data-label="Budget local (Zara group to Altezza private for two)">£200–£400</td>
+<td data-label="Mid-range (Kandoo)">£200–£400</td>
+<td data-label="Upper mid (KE, Jagged Globe, Exodus)">£200–£400</td>
+<td data-label="Premium (Tusker Trail)">£200–£400</td>
 </tr>
 <tr>
-<td><strong>Estimated total each</strong></td>
-<td><strong>≈ £3,000–£5,300</strong></td>
-<td><strong>≈ £3,700–£4,700</strong></td>
-<td><strong>≈ £4,200–£6,600</strong></td>
-<td><strong>≈ £6,200–£7,200</strong></td>
+<td data-label="Item (per person)"><strong>Estimated total each</strong></td>
+<td data-label="Budget local (Zara group to Altezza private for two)"><strong>≈ £3,000–£5,300</strong></td>
+<td data-label="Mid-range (Kandoo)"><strong>≈ £3,700–£4,700</strong></td>
+<td data-label="Upper mid (KE, Jagged Globe, Exodus)"><strong>≈ £4,200–£6,600</strong></td>
+<td data-label="Premium (Tusker Trail)"><strong>≈ £6,200–£7,200</strong></td>
 </tr>
 <tr>
-<td><strong>For the two of you</strong></td>
-<td><strong>≈ £6,000–£10,500</strong></td>
-<td><strong>≈ £7,400–£9,400</strong></td>
-<td><strong>≈ £8,400–£13,200</strong></td>
-<td><strong>≈ £12,300–£14,300</strong></td>
+<td data-label="Item (per person)"><strong>For the two of you</strong></td>
+<td data-label="Budget local (Zara group to Altezza private for two)"><strong>≈ £6,000–£10,500</strong></td>
+<td data-label="Mid-range (Kandoo)"><strong>≈ £7,400–£9,400</strong></td>
+<td data-label="Upper mid (KE, Jagged Globe, Exodus)"><strong>≈ £8,400–£13,200</strong></td>
+<td data-label="Premium (Tusker Trail)"><strong>≈ £12,300–£14,300</strong></td>
 </tr>
 </tbody>
 </table></div>
@@ -675,29 +714,29 @@ ul.task-list{list-style:none;padding-left:4px}
 </thead>
 <tbody>
 <tr>
-<td><a href="https://www.campbellirvinedirect.com/trekking/" target="_blank" rel="noopener">Campbell Irvine</a></td>
-<td>Guided trekking to 7,000 m</td>
-<td>Price doubles from 66; over 69 by agreement</td>
+<td data-label="Insurer"><a href="https://www.campbellirvinedirect.com/trekking/" target="_blank" rel="noopener">Campbell Irvine</a></td>
+<td data-label="Altitude cover">Guided trekking to 7,000 m</td>
+<td data-label="Age limit">Price doubles from 66; over 69 by agreement</td>
 </tr>
 <tr>
-<td><a href="https://www.sportscoverdirect.com/insurance/trekking-insurance/" target="_blank" rel="noopener">SportsCover Direct</a></td>
-<td>To 7,000 m</td>
-<td>Up to 74 when buying</td>
+<td data-label="Insurer"><a href="https://www.sportscoverdirect.com/insurance/trekking-insurance/" target="_blank" rel="noopener">SportsCover Direct</a></td>
+<td data-label="Altitude cover">To 7,000 m</td>
+<td data-label="Age limit">Up to 74 when buying</td>
 </tr>
 <tr>
-<td><a href="https://www.truetraveller.com/kilimanjaro-travel-insurance" target="_blank" rel="noopener">True Traveller</a> (Extreme)</td>
-<td>Unlimited altitude</td>
-<td>Up to 75</td>
+<td data-label="Insurer"><a href="https://www.truetraveller.com/kilimanjaro-travel-insurance" target="_blank" rel="noopener">True Traveller</a> (Extreme)</td>
+<td data-label="Altitude cover">Unlimited altitude</td>
+<td data-label="Age limit">Up to 75</td>
 </tr>
 <tr>
-<td><a href="https://www.dogtag.co.uk/sports-information/mountaineering-travel-insurance/" target="_blank" rel="noopener">Dogtag</a> (Super Extreme)</td>
-<td>To 6,000 m</td>
-<td>Not stated</td>
+<td data-label="Insurer"><a href="https://www.dogtag.co.uk/sports-information/mountaineering-travel-insurance/" target="_blank" rel="noopener">Dogtag</a> (Super Extreme)</td>
+<td data-label="Altitude cover">To 6,000 m</td>
+<td data-label="Age limit">Not stated</td>
 </tr>
 <tr>
-<td><a href="https://www.thebmc.co.uk/en/travel-insurance" target="_blank" rel="noopener">BMC</a></td>
-<td>Trek policy only to 5,000 m, so he'd need its Alpine &amp; Ski cover</td>
-<td>Not stated</td>
+<td data-label="Insurer"><a href="https://www.thebmc.co.uk/en/travel-insurance" target="_blank" rel="noopener">BMC</a></td>
+<td data-label="Altitude cover">Trek policy only to 5,000 m, so he'd need its Alpine &amp; Ski cover</td>
+<td data-label="Age limit">Not stated</td>
 </tr>
 </tbody>
 </table></div>
