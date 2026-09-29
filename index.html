@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kilimanjaro for Dad</title>
+<meta name="description" content="Ways to climb Kilimanjaro together in 2027, compared on summit odds, timing and cost: 15 operators, 7 routes, month-by-month conditions and a cost calculator. Researched 28 September 2026.">
+<!-- Personal family page: kept out of search engines. Change to "index, follow" to allow indexing. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kilimanjaro for Dad">
+<meta property="og:description" content="Ways to climb Kilimanjaro together in 2027, compared on summit odds, timing and cost: 15 operators, 7 routes, month-by-month conditions and a cost calculator. Researched 28 September 2026.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B6670'/%3E%3Cpath d='M6 50 L24 22 L30 28 L38 16 L58 50 Z' fill='%23EDF1F0'/%3E%3Cpath d='M32 20 L38 16 L44 26 L40 24 L36 27 Z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Base reset (previously supplied by the artifact host) */
+:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<style>
+:root{
+  --ground:#EDF1F0; --surface:#FFFFFF; --surface-2:#E2E9E6; --ink:#15201C; --muted:#55635E; --line:#CBD5D1;
+  --accent:#1B6670; --accent-ink:#FFFFFF; --accent-soft:#D5E7E9;
+  --dawn:#A9561A; --dawn-soft:#F7E5D2;
+  --good:#2C7A4B; --good-soft:#DCEFE3; --warn:#A8701C; --warn-soft:#F6EACF; --poor:#7C8784; --poor-soft:#E4E8E7;
+  --shadow:0 1px 2px rgba(21,32,28,.06),0 6px 18px rgba(21,32,28,.06);
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#0E1412; --surface:#16201C; --surface-2:#1F2B27; --ink:#E5ECE9; --muted:#9CAAA5; --line:#2D3B36;
+    --accent:#62B9C2; --accent-ink:#0E1412; --accent-soft:#1C3538;
+    --dawn:#F0A65C; --dawn-soft:#3A2A1B;
+    --good:#62C58D; --good-soft:#193127; --warn:#E6B350; --warn-soft:#352B17; --poor:#7D8A86; --poor-soft:#232D2A;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.25);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#0E1412; --surface:#16201C; --surface-2:#1F2B27; --ink:#E5ECE9; --muted:#9CAAA5; --line:#2D3B36;
+  --accent:#62B9C2; --accent-ink:#0E1412; --accent-soft:#1C3538;
+  --dawn:#F0A65C; --dawn-soft:#3A2A1B;
+  --good:#62C58D; --good-soft:#193127; --warn:#E6B350; --warn-soft:#352B17; --poor:#7D8A86; --poor-soft:#232D2A;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;padding-inline:16px}
+.wrap{max-width:1080px;margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:1.1;text-wrap:balance;margin:0}
+h2{font-size:clamp(1.6rem,3.2vw,2.1rem);font-weight:700;letter-spacing:-.01em}
+h3{font-size:1.15rem;font-weight:700}
+p{margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,label:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:500}
+.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);font-weight:600}
+
+/* hero */
+.hero{position:relative;padding-block:40px 0;display:grid;gap:20px}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:700;letter-spacing:-.02em}
+.hero .lede{font-size:1.2rem;color:var(--muted);max-width:40ch}
+.ridge{width:100%;height:auto;display:block;margin-top:8px}
+.ridge .snow{fill:var(--surface)}
+.ridge .rock{fill:var(--surface-2)}
+.ridge .edge{fill:none;stroke:var(--line);stroke-width:1.5}
+.ridge text{fill:var(--muted);font-family:var(--mono);font-size:12px}
+.ridge .peak{fill:var(--dawn)}
+.pick{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:20px;display:grid;gap:16px;margin-top:-6px;position:relative}
+.pick-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.pick-grid div{display:grid;gap:2px}
+.pick-grid strong{font-family:var(--display);font-size:1.35rem;font-weight:700}
+.pick-grid span{color:var(--muted);font-size:.93rem}
+.pick-foot{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;font-size:.95rem;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+
+/* nav */
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--ground);border-bottom:1px solid var(--line);margin-top:28px;overflow-x:auto}
+nav.tabs ul{list-style:none;margin:0;padding:0;display:flex;gap:4px;max-width:1080px;margin-inline:auto}
+nav.tabs a{display:block;padding:12px 12px;text-decoration:none;color:var(--muted);font-weight:600;white-space:nowrap;border-bottom:2px solid transparent}
+nav.tabs a:hover{color:var(--ink)}
+nav.tabs a.on{color:var(--ink);border-bottom-color:var(--accent)}
+
+section{padding-block:44px 8px;scroll-margin-top:56px;display:grid;gap:18px}
+.sec-head{display:grid;gap:8px;max-width:70ch}
+.sec-head p{color:var(--muted)}
+
+/* controls */
+.controls{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip-btn{font:inherit;font-weight:600;font-size:.92rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer}
+.chip-btn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.chip-btn:hover{border-color:var(--accent)}
+select{max-width:100%;font:inherit;font-size:.95rem;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.check{display:flex;gap:8px;align-items:center;font-size:.95rem;cursor:pointer}
+.check input{accent-color:var(--accent);width:18px;height:18px}
+.count{color:var(--muted);font-size:.9rem;margin-left:auto}
+
+/* operator cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:10px;align-content:start}
+.card.short{border-color:var(--dawn);box-shadow:var(--shadow)}
+.card-top{display:flex;justify-content:space-between;gap:10px;align-items:start}
+.tier{font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:var(--muted)}
+.badge{font-size:.76rem;font-weight:700;background:var(--dawn-soft);color:var(--dawn);border-radius:6px;padding:2px 8px;white-space:nowrap}
+.card h3 a{color:var(--ink);text-decoration:none}
+.card h3 a:hover{text-decoration:underline}
+.trip{color:var(--muted);font-size:.95rem}
+.price{display:flex;flex-wrap:wrap;gap:4px 16px;align-items:baseline}
+.price .big{font-size:1.3rem}
+.price small{color:var(--muted);font-size:.85rem}
+.feat{display:flex;flex-wrap:wrap;gap:5px;padding:0;margin:0;list-style:none}
+.feat li{font-size:.8rem;border-radius:6px;padding:2px 8px;background:var(--good-soft);color:var(--good);font-weight:600}
+.feat li.no{background:transparent;border:1px dashed var(--line);color:var(--muted);font-weight:400}
+.feat li.extra{background:var(--warn-soft);color:var(--warn)}
+.note{font-size:.92rem}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 12px;margin:0;padding:10px 12px;background:var(--surface-2);border-radius:8px}
+.pair div{display:grid;gap:1px;min-width:0}
+.pair dt{font-size:.78rem;color:var(--muted)}
+.pair dd{margin:0;font-size:.92rem;font-weight:600}
+.note.warn{color:var(--warn)}
+.empty{padding:24px;border:1px dashed var(--line);border-radius:12px;color:var(--muted)}
+
+/* routes */
+.route-layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:16px}
+@media (max-width:820px){.route-layout{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;grid-template-columns:minmax(0,1fr);gap:12px;align-content:start;min-width:0}
+.panel>*{min-width:0}
+.profile-box{overflow-x:auto}
+.profile{width:100%;min-width:520px;height:auto;display:block}
+.profile text{font-family:var(--body);font-size:12px;fill:var(--muted)}
+.profile .lab{fill:var(--ink);font-weight:600}
+.profile .grid{stroke:var(--line);stroke-width:1}
+.profile .zone{fill:var(--dawn-soft);opacity:.7}
+.profile .line{fill:none;stroke:var(--accent);stroke-width:2.5;stroke-linejoin:round}
+.profile .area{fill:var(--accent-soft);opacity:.8}
+.profile .dot{fill:var(--surface);stroke:var(--accent);stroke-width:2}
+.profile .dot.hike{fill:var(--accent)}
+.profile .dot.top{fill:var(--dawn);stroke:var(--dawn)}
+dl.facts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:8px 14px;margin:0}
+dl.facts dt{color:var(--muted);font-size:.9rem}
+dl.facts dd{margin:0;font-weight:600}
+.verdict{padding:10px 12px;border-radius:8px;font-weight:600}
+.verdict.good{background:var(--good-soft);color:var(--good)}
+.verdict.ok{background:var(--warn-soft);color:var(--warn)}
+.verdict.bad{background:var(--poor-soft);color:var(--muted)}
+.odds{display:grid;gap:8px}
+.odds-row{display:grid;grid-template-columns:150px 1fr 76px;gap:10px;align-items:center;font-size:.93rem}
+.odds-row button{font:inherit;text-align:left;background:none;border:0;color:var(--ink);padding:0;cursor:pointer;font-weight:600}
+.odds-row.on button{color:var(--accent)}
+.track{position:relative;height:12px;background:var(--surface-2);border-radius:999px}
+.track .rng{position:absolute;top:0;bottom:0;border-radius:999px;background:var(--accent)}
+.track .ref{position:absolute;top:-4px;bottom:-4px;width:0;border-left:1.5px dashed var(--dawn)}
+.odds-row .num{text-align:right;color:var(--muted);font-size:.85rem}
+@media (max-width:520px){.odds-row{grid-template-columns:110px 1fr 64px}}
+
+/* months */
+.months{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:6px}
+@media (max-width:640px){.months{grid-template-columns:repeat(6,minmax(0,1fr))}}
+.mbtn{font:inherit;border:1px solid var(--line);border-radius:10px;padding:10px 4px 8px;background:var(--surface);color:var(--ink);cursor:pointer;display:grid;gap:6px;justify-items:center}
+.mbtn .bar{width:70%;height:6px;border-radius:3px}
+.mbtn .m{font-weight:700}
+.mbtn .s{font-family:var(--mono);font-size:.78rem;color:var(--muted)}
+.mbtn[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+.r-good{background:var(--good)} .r-mix{background:var(--warn)} .r-poor{background:var(--poor)}
+.month-detail{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.month-detail div{display:grid;gap:2px}
+.month-detail span{color:var(--muted);font-size:.88rem}
+.month-detail strong{font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:.88rem;color:var(--muted)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+
+/* cost */
+.calc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+@media (max-width:820px){.calc{grid-template-columns:1fr}}
+.field{display:grid;grid-template-columns:minmax(0,1fr);gap:6px;min-width:0}
+.field select{width:100%}
+.field label{font-weight:600;font-size:.95rem}
+.field .hint{color:var(--muted);font-size:.85rem}
+input[type=range]{accent-color:var(--accent);width:100%}
+.lines{display:grid;gap:0;margin:0}
+.lines div{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line)}
+.lines dt{color:var(--muted)}
+.lines dd{margin:0}
+.total{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:12px}
+.total strong{font-family:var(--display);font-size:1.9rem}
+#cEach{font-size:1.3rem}
+
+/* steps */
+.steps{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+@media (max-width:820px){.steps{grid-template-columns:1fr}}
+.todo{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.todo label{display:flex;gap:10px;align-items:start;padding:8px 4px;cursor:pointer;border-radius:6px}
+.todo input{accent-color:var(--accent);width:18px;height:18px;margin-top:2px;flex:none}
+.todo input:checked + span{color:var(--muted);text-decoration:line-through}
+.qs{margin:0;padding-left:20px;display:grid;gap:6px}
+.btn{font:inherit;font-weight:600;border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink);border-radius:8px;padding:8px 14px;cursor:pointer;justify-self:start}
+.btn.ghost{background:transparent;color:var(--accent)}
+footer{padding-block:40px 48px;color:var(--muted);font-size:.9rem;display:grid;gap:8px;max-width:75ch}
+@media (prefers-reduced-motion:no-preference){.card,.mbtn,.chip-btn{transition:border-color .15s,background-color .15s}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <p class="eyebrow">Uhuru Peak · 5,895 m · Kilimanjaro National Park, Tanzania</p>
+    <h1>Kilimanjaro, 2027</h1>
+    <p class="lede">The ways you and Dad could climb it together, compared on summit odds, timing and cost.</p>
+    <svg class="ridge" viewBox="0 0 1080 170" role="img" aria-label="Outline of Kilimanjaro with Kibo summit and Mawenzi peak">
+      <path class="rock" d="M0 170 L0 150 C120 142 210 128 300 104 C360 88 400 70 440 52 L470 40 C500 34 560 32 610 38 L640 44 C690 58 730 76 780 92 L812 80 L838 64 L858 74 L880 96 C940 118 1010 136 1080 146 L1080 170 Z"/>
+      <path class="snow" d="M440 52 L470 40 C500 34 560 32 610 38 L640 44 L626 50 L604 46 L590 54 L566 46 L548 52 L526 45 L502 52 L484 47 L462 55 Z"/>
+      <path class="edge" d="M0 150 C120 142 210 128 300 104 C360 88 400 70 440 52 L470 40 C500 34 560 32 610 38 L640 44 C690 58 730 76 780 92 L812 80 L838 64 L858 74 L880 96 C940 118 1010 136 1080 146"/>
+      <circle class="peak" cx="540" cy="33" r="4"/>
+      <text x="552" y="24">Uhuru 5,895 m</text>
+      <text x="846" y="56">Mawenzi 5,149 m</text>
+    </svg>
+  </header>
+
+  <div class="pick" aria-labelledby="pick-h">
+    <p class="eyebrow" id="pick-h">Recommendation</p>
+    <div class="pick-grid">
+      <div><strong>Lemosho, 8 days</strong><span>or the 9-day Northern Circuit for more margin</span></div>
+      <div><strong>September 2027</strong><span>dry, past the summer peak, nine months to train</span></div>
+      <div><strong>≈ 85–90% odds</strong><span>realistic chance of Uhuru Peak on a well-run 8–9 day climb</span></div>
+      <div><strong class="num">£7,400–9,400</strong><span>all-in for you both from London with Kandoo, sharing a tent and room</span></div>
+    </div>
+    <p class="pick-foot"><span>Days on the mountain and a well-run operator matter more than age.</span> <a href="write-up.html">Full write-up with sources →</a></p>
+  </div>
+</div>
+
+<nav class="tabs" aria-label="Sections">
+  <ul>
+    <li><a href="#options">Operators</a></li>
+    <li><a href="#routes">Routes &amp; odds</a></li>
+    <li><a href="#when">When to go</a></li>
+    <li><a href="#cost">Cost</a></li>
+    <li><a href="#next">Next steps</a></li>
+  </ul>
+</nav>
+
+<main class="wrap">
+  <section id="options" aria-labelledby="options-h">
+    <div class="sec-head">
+      <h2 id="options-h">Operators and trips</h2>
+      <p>Climb prices are each, sharing a tent and a hotel twin room, read from operator sites in September 2026; "for you both" doubles them. US-dollar prices are converted at $1.34 to £1. All-in adds flights, tips, visa, insurance, jabs and kit. Green tags are stated on the operator's page; dashed tags with a question mark aren't mentioned, so ask.</p>
+    </div>
+    <div class="controls">
+      <div class="chips" role="group" aria-label="Filter by tier" id="tierChips"></div>
+      <label class="check"><input type="checkbox" id="safeOnly"> Oxygen and health checks included</label>
+      <label class="check" for="sortBy">Sort <select id="sortBy">
+        <option value="rec">Shortlist first</option>
+        <option value="price">Lowest price</option>
+        <option value="days">Most days on the mountain</option>
+      </select></label>
+      <span class="count" id="opCount" aria-live="polite"></span>
+    </div>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <section id="routes" aria-labelledby="routes-h">
+    <div class="sec-head">
+      <h2 id="routes-h">Routes and summit odds</h2>
+      <p>More nights spent high before summit night means better acclimatisation. Pick a route to see its altitude profile. Altitudes are approximate and itineraries vary by operator.</p>
+    </div>
+    <div class="chips" role="group" aria-label="Choose a route" id="routeChips"></div>
+    <div class="route-layout">
+      <div class="panel">
+        <h3 id="profTitle"></h3>
+        <div class="profile-box"><svg class="profile" id="profile" viewBox="0 0 640 300" role="img" aria-labelledby="profTitle"></svg></div>
+        <p class="trip">Filled dots are nights in camp; small solid dots are "climb high, sleep low" hikes; the amber dot is the summit. Shaded band = above 3,500 m.</p>
+      </div>
+      <div class="panel" id="routeFacts"></div>
+    </div>
+    <div class="panel">
+      <h3>Summit success, operator estimates</h3>
+      <p class="trip">Ranges quoted by operators for the true summit; methods are rarely published. The dashed line is 88%, what a 2022 medical study of 1,237 climbers on 6–9 day routes found.</p>
+      <div class="odds" id="odds"></div>
+    </div>
+  </section>
+
+  <section id="when" aria-labelledby="when-h">
+    <div class="sec-head">
+      <h2 id="when-h">When to go</h2>
+      <p>Two dry windows: January to February and June to October. No one publishes success rates by month, but rain and snow make summit night harder and have turned groups back short of the top.</p>
+    </div>
+    <div class="legend"><span><i class="r-good"></i>Good</span><span><i class="r-mix"></i>Mixed</span><span><i class="r-poor"></i>Rainy season</span><span>Number = conditions out of 5</span></div>
+    <div class="months" id="months" role="group" aria-label="Choose a month"></div>
+    <div class="panel">
+      <h3 id="mTitle"></h3>
+      <div class="month-detail" id="mDetail"></div>
+    </div>
+  </section>
+
+  <section id="cost" aria-labelledby="cost-h">
+    <div class="sec-head">
+      <h2 id="cost-h">What it would cost</h2>
+      <p>An estimate from London, each and for you both. Park fees (about $1,100 each for 8 days) are already inside every climb price. Prices assume you share a tent and a twin room.</p>
+    </div>
+    <div class="calc">
+      <div class="panel">
+        <div class="field">
+          <label for="cOp">Trip</label>
+          <select id="cOp"></select>
+          <span class="hint" id="cOpHint"></span>
+        </div>
+        <div class="field">
+          <label for="cFlight">Flights</label>
+          <select id="cFlight">
+            <option value="600">Quieter month (Jan–Feb, Oct) · ≈ £600</option>
+            <option value="750" selected>September · ≈ £750</option>
+            <option value="1000">July–August or Christmas · ≈ £1,000</option>
+          </select>
+          <span class="hint">One-stop return to Kilimanjaro, e.g. KLM via Amsterdam</span>
+        </div>
+        <div class="field">
+          <label for="cTips">Tips for guides, cook and porters: <span class="num" id="cTipsOut"></span></label>
+          <input type="range" id="cTips" min="300" max="450" step="25" value="375">
+          <span class="hint">Paid in cash at the end; typical guidance is $300–$450 per climber</span>
+        </div>
+        <div class="field">
+          <label for="cKit">Kit</label>
+          <select id="cKit">
+            <option value="150">Has most of it already · ≈ £150</option>
+            <option value="300" selected>Some to buy or hire · ≈ £300</option>
+            <option value="450">Starting from scratch · ≈ £450</option>
+          </select>
+        </div>
+        <div class="field"><label for="cPeople">Who's going</label><select id="cPeople"><option value="2" selected>You and Dad, sharing a tent and room</option><option value="1">One person only</option></select></div>
+        <label class="check"><input type="checkbox" id="cSolo"> Own tent and room each (single supplement)</label>
+      </div>
+      <div class="panel">
+        <dl class="lines" id="cLines"></dl>
+        <div class="total"><span id="cEachLab">Each</span><strong class="num" id="cEach"></strong></div>
+        <div class="total" id="cBothRow"><span>For you both</span><strong class="num" id="cTotal"></strong></div>
+        <p class="trip">Insurance and jabs are mid-range estimates. Excludes spending money and any safari or Zanzibar extension.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="next" aria-labelledby="next-h">
+    <div class="sec-head">
+      <h2 id="next-h">Next steps</h2>
+      <p>Ticks are saved in this browser only.</p>
+    </div>
+    <div class="steps">
+      <div class="panel">
+        <h3>To do</h3>
+        <ul class="todo" id="todo"></ul>
+      </div>
+      <div class="panel">
+        <h3>Questions to ask any operator</h3>
+        <ol class="qs" id="qs"></ol>
+        <button class="btn ghost" type="button" id="copyQs">Copy questions</button>
+        <span class="trip" id="copyMsg" aria-live="polite"></span>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Health notes at 60</h3>
+      <ul class="qs">
+        <li>See the GP first, with a focus on the heart. Some operators suggest a cardiac stress test over 60.</li>
+        <li>UK guidance says people 60 and over should not be given the yellow fever vaccine for Tanzania. A certificate is only asked for after arriving from, or spending over 12 hours in transit in, a yellow-fever country (Kenya and Ethiopia count). Flying via Amsterdam, Doha or Istanbul avoids it.</li>
+        <li>Malaria tablets are needed for Moshi and Arusha. Ask the GP about acetazolamide (Diamox) for altitude.</li>
+        <li>Insurance must cover trekking to 6,000 m and helicopter rescue. Campbell Irvine, SportsCover Direct and True Traveller all cover him at 60.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>Researched 28 September 2026. Operator prices, park fees and flight costs change, so confirm before booking. Success rates are operator claims unless noted; independent medical studies put the true-summit rate on 6–9 day climbs at about 88%.</p>
+    <p><a href="write-up.html">Full write-up with all sources →</a></p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var FX = 1.34;
+  var EXTRA_LO = 1312, EXTRA_HI = 2317;
+  var gbp = function(n){ return '£' + Math.round(n).toLocaleString('en-GB'); };
+  var usd = function(n){ return '$' + n.toLocaleString('en-US'); };
+
+  var ops = [
+    {id:'kandoo', rank:1, pick:'Shortlist #1 · best all-round', name:'Kandoo Adventures', tier:'mid', base:'UK', trip:'Lemosho, 8 days on the mountain (10-day trip)', days:8, lo:2399, hi:2399, cur:'gbp', share:'Group, twin share', supp:null, suppTxt:'Optional; no forced solo charge',
+      url:'https://www.kandooadventures.com/destination-kilimanjaro/trip-kilimanjaro-lemosho-route/TZLM',
+      f:{oxygen:1, checks:1, chamber:0, toilet:1, kpap:1}, note:'4.9 on Trustpilot from 1,230 reviews. Hotels, transfers and park fees included; health check required.'},
+    {id:'ukNC', rank:2, pick:'Shortlist #2 · most margin', name:'Ultimate Kilimanjaro', tier:'local', base:'Tanzania', trip:'Northern Circuit, 9 days (group)', days:9, lo:3649, hi:3649, cur:'usd', share:'Group, double occupancy', supp:223, suppTxt:'$299 each',
+      url:'https://www.ultimatekilimanjaro.com/dates-prices-2027/',
+      f:{oxygen:null, checks:1, chamber:null, toilet:1, kpap:1}, note:'Same price for 2027. A private climb for just you two is $4,599 each. Also Lemosho 8 days at $3,299 (private for two $4,099 each). Confirm oxygen and altitude chamber.'},
+    {id:'tusker', rank:3, pick:'Shortlist #3 · most medical support', name:'Tusker Trail', tier:'premium', base:'US', trip:'Lemosho, 9 days climbing (12-day trip)', days:9, lo:6490, hi:6490, cur:'usd', share:'Sharing basis not stated', supp:null, suppTxt:'Ask',
+      url:'https://www.tusker.com/kilimanjaro/climb-lemosho-route/',
+      f:{oxygen:1, checks:1, chamber:1, toilet:null, kpap:null}, note:'Medically trained guides, daytime summit, international evacuation cover included.'},
+    {id:'jagged', rank:4, pick:'Shortlist #4 · acclimatise on Meru first', name:'Jagged Globe', tier:'premium', base:'UK', trip:'Mount Meru, then Lemosho (11 nights)', days:null, lo:2895, hi:2895, cur:'gbp', share:'Sharing basis not stated', supp:null, suppTxt:'Ask',
+      url:'https://www.jagged-globe.co.uk/trek/kilimanjaro.html',
+      f:{oxygen:null, checks:null, chamber:null, toilet:null, kpap:null}, note:'Climbing Meru (4,566 m) first is the best acclimatisation on offer. Shown reduced from £3,895 when checked; confirm what 2027 costs and whether flights are included.'},
+    {id:'altezza', rank:5, pick:'Shortlist #5 · private climb for two', name:'Altezza Travel', tier:'local', base:'Tanzania', trip:'Lemosho, 8 days, private for just you two', days:8, lo:3937, hi:3937, cur:'usd', share:'Private, 2-person rate', supp:null, suppTxt:'On request',
+      url:'https://altezzatravel.com/climbing-kilimanjaro/price',
+      f:{oxygen:1, checks:1, chamber:null, toilet:1, kpap:1}, note:'Priced by group size: $3,937 each for two, $3,112 each for 8+. Your own dates and pace. All guides first-aid trained, in-house doctor, 4.9 on Trustpilot.'},
+    {id:'ke', rank:6, name:'KE Adventure', tier:'premium', base:'UK', trip:'Lemosho (10-day trip)', days:null, lo:3825, hi:3825, cur:'gbp', share:'Sharing basis not stated', supp:50, suppTxt:'£50',
+      url:'https://www.keadventure.com/holidays/tanzania-trekking-kilimanjaro-lemosho',
+      f:{oxygen:1, checks:null, chamber:1, toilet:null, kpap:null}, note:'1 guide per 2 climbers, max 14. Solo supplement only £50.'},
+    {id:'thomson', rank:7, name:'Thomson Treks', tier:'premium', base:'US', trip:'Western Approach, 9 days', days:9, lo:6790, hi:6790, cur:'usd', share:'Per adult; sharing basis not stated', supp:null, suppTxt:'Ask',
+      url:'https://www.thomsontreks.com/find-your-trek/',
+      f:{oxygen:null, checks:null, chamber:null, toilet:1, kpap:null}, note:'A first-aid-certified guide for every 2–3 climbers. Claims 98% success on the 9-day route.'},
+    {id:'iantaylor', rank:8, name:'Ian Taylor Trekking', tier:'premium', base:'US', trip:'Lemosho, 8 days', days:8, lo:3850, hi:3850, cur:'usd', share:'Sharing basis not stated', supp:null, suppTxt:'Ask',
+      url:'https://iantaylortrekking.com/blog/ian-taylor-trekking-prices/',
+      f:{oxygen:1, checks:1, chamber:null, toilet:1, kpap:null}, note:'Max 10 per group. Claims 98% on Lemosho across 1,240 clients.'},
+    {id:'exodus', rank:9, name:'Exodus', tier:'mid', base:'UK', trip:'Lemosho (10-day trip)', days:null, lo:3812, hi:4259, cur:'gbp', share:'Group, twin share', supp:425, suppTxt:'£425 each',
+      url:'https://www.exodus.co.uk/trips/tanzania-holidays/walking/kilimanjaro-climb-lemosho-route/tyr',
+      f:{oxygen:null, checks:null, chamber:null, toilet:1, kpap:1}, note:'1 guide per 2 on summit day. January 2027 departure £4,020.'},
+    {id:'action', rank:10, name:'Action Challenge', tier:'mid', base:'UK', trip:'Lemosho (11-day trip), 7 trekking days', days:7, lo:2895, hi:2995, cur:'gbp', share:'Group, twin share', supp:null, suppTxt:'Upgrade on request',
+      url:'https://www.actionchallenge.com/overseas-trips/lemosho/',
+      f:{oxygen:null, checks:1, chamber:null, toilet:null, kpap:null}, note:'UK Mountain Leader and UK medic on the trip. Land only shown; with UK flights £3,695 (£4,095 late July and late August). Groups often around 20.'},
+    {id:'mba', rank:11, name:'Much Better Adventures', tier:'mid', base:'UK', trip:'Lemosho, 8 days (10-day trip)', days:8, lo:2349, hi:2349, cur:'gbp', share:'Group, twin share', supp:null, suppTxt:'Private room and tent upgrade',
+      url:'https://www.muchbetteradventures.com/products/10799-adventures-climb-kilimanjaro-lemosho-route/',
+      f:{oxygen:1, checks:null, chamber:null, toilet:null, kpap:null}, note:'Max 12 per group. Price shown is "from"; check 2027 dates.'},
+    {id:'gadv', rank:12, name:'G Adventures', tier:'mid', base:'Canada', trip:'Lemosho, 8 days (10-day trip)', days:8, lo:3899, hi:3899, cur:'usd', share:'Group, per person', supp:611, suppTxt:'"My Own Room" from $819',
+      url:'https://www.gadventures.com/trips/mt-kilimanjaro-trek-lemosho-route/DTKL/',
+      f:{oxygen:'extra', checks:null, chamber:'extra', toilet:null, kpap:null}, warn:'Oxygen and altitude chamber are rentals, not included.', note:'Sale price; usually $5,199. Max 12.'},
+    {id:'intrepid', rank:13, name:'Intrepid', tier:'mid', base:'Australia', trip:'Machame or Marangu (8-day trip)', days:null, lo:2195, hi:2195, cur:'gbp', share:'Sharing basis not stated', supp:null, suppTxt:'Ask',
+      url:'https://www.intrepidtravel.com/uk/kilimanjaro',
+      f:{oxygen:1, checks:null, chamber:null, toilet:null, kpap:null}, note:'1 guide per 2 climbers. No Lemosho option, so less time on the mountain.'},
+    {id:'tranquil', rank:14, name:'Tranquil Kilimanjaro', tier:'local', base:'Tanzania', trip:'Lemosho, 8 days', days:8, lo:2350, hi:2350, cur:'usd', share:'Group size not stated', supp:null, suppTxt:'Ask',
+      url:'https://www.tranquilkilimanjaro.com/how-much-does-it-really-cost-to-climb-kilimanjaro-in-2026-honest-price-breakdown-value-guide/',
+      f:{oxygen:null, checks:null, chamber:null, toilet:null, kpap:null}, note:'Cheapest credible Lemosho found; Northern Circuit 9 days $2,545. It says a private climb for two costs 20–30% more each than a group of six. Safety kit and inclusions not stated online.'},
+    {id:'zara', rank:15, name:'Zara Tours', tier:'local', base:'Tanzania', trip:'Lemosho, 8 days (group)', days:8, lo:2251, hi:2251, cur:'usd', share:'Group, double or triple occupancy', supp:57, suppTxt:'$76 each',
+      url:'https://zaratanzaniaadventures.com/prices-2026/',
+      f:{oxygen:'extra', checks:null, chamber:'extra', toilet:null, kpap:null}, warn:'Oxygen and altitude chamber cost extra, a red flag at 60.', note:'Large, long-established. Park fees and hotel included.'}
+  ];
+  ops.forEach(function(o){ o.gLo = o.cur==='usd' ? o.lo/FX : o.lo; o.gHi = o.cur==='usd' ? o.hi/FX : o.hi; });
+  var tierName = {local:'Local', mid:'Mid-range', premium:'Premium'};
+  var featName = {oxygen:'Oxygen', checks:'Health checks', chamber:'Altitude chamber', toilet:'Private toilet', kpap:'Porter-welfare partner'};
+
+  var state = {tier:'all', safe:false, sort:'rec', route:'lemosho8', month:8};
+  try { var saved = JSON.parse(localStorage.getItem('kili-view') || '{}'); if (saved && typeof saved === 'object') { ['tier','sort','route'].forEach(function(k){ if (typeof saved[k]==='string') state[k]=saved[k]; }); if (typeof saved.month==='number') state.month=saved.month; if (typeof saved.safe==='boolean') state.safe=saved.safe; } } catch(e){}
+  function save(){ try { localStorage.setItem('kili-view', JSON.stringify(state)); } catch(e){} }
+
+  function el(tag, attrs, html){ var n=document.createElement(tag); if(attrs) Object.keys(attrs).forEach(function(k){ n.setAttribute(k, attrs[k]); }); if(html!=null) n.innerHTML=html; return n; }
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+  /* operators */
+  var tierChips = document.getElementById('tierChips');
+  [['all','All'],['local','Local'],['mid','Mid-range'],['premium','Premium']].forEach(function(t){
+    var b = el('button',{type:'button','class':'chip-btn','data-tier':t[0]}, t[1]);
+    b.addEventListener('click', function(){ state.tier=t[0]; save(); renderOps(); });
+    tierChips.appendChild(b);
+  });
+  var safeOnly = document.getElementById('safeOnly'), sortBy = document.getElementById('sortBy');
+  safeOnly.checked = state.safe; sortBy.value = state.sort;
+  safeOnly.addEventListener('change', function(){ state.safe=safeOnly.checked; save(); renderOps(); });
+  sortBy.addEventListener('change', function(){ state.sort=sortBy.value; save(); renderOps(); });
+
+  function priceText(o){
+    var main = o.gLo===o.gHi ? gbp(o.gLo) : gbp(o.gLo)+'–'+gbp(o.gHi).slice(1);
+    var orig = o.cur==='usd' ? (o.lo===o.hi ? usd(o.lo) : usd(o.lo)+'–'+usd(o.hi)) : '';
+    return {main:main, orig:orig};
+  }
+  function renderOps(){
+    tierChips.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-tier')===state.tier ? 'true':'false'); });
+    var list = ops.filter(function(o){
+      if (state.tier!=='all' && o.tier!==state.tier) return false;
+      if (state.safe && !(o.f.oxygen===1 && o.f.checks===1)) return false;
+      return true;
+    });
+    list.sort(function(a,b){
+      if (state.sort==='price') return a.gLo-b.gLo;
+      if (state.sort==='days') return (b.days||0)-(a.days||0) || a.rank-b.rank;
+      return a.rank-b.rank;
+    });
+    var box = document.getElementById('cards'); box.innerHTML='';
+    document.getElementById('opCount').textContent = list.length + ' of ' + ops.length + ' trips';
+    if (!list.length){ box.appendChild(el('p',{'class':'empty'},'No trips match. Try another tier or untick the filter.')); return; }
+    list.forEach(function(o){
+      var p = priceText(o);
+      var feats = Object.keys(featName).map(function(k){
+        var v=o.f[k];
+        if (v===1) return '<li>'+featName[k]+'</li>';
+        if (v==='extra') return '<li class="extra">'+featName[k]+' extra</li>';
+        return '<li class="no" title="Not stated on the operator page, so ask">'+featName[k]+' ?</li>';
+      }).join('');
+      var card = el('article',{'class':'card'+(o.pick?' short':'')});
+      card.innerHTML =
+        '<div class="card-top"><span class="tier">'+tierName[o.tier]+' · '+esc(o.base)+'</span>'+(o.pick?'<span class="badge">'+esc(o.pick)+'</span>':'')+'</div>'+
+        '<h3><a href="'+o.url+'" target="_blank" rel="noopener">'+esc(o.name)+' ↗</a></h3>'+
+        '<p class="trip">'+esc(o.trip)+'</p>'+
+        '<div class="price"><span class="num big">'+p.main+'</span><small>each</small>'+(p.orig?'<small class="num">'+p.orig+'</small>':'')+'</div>'+'<dl class="pair"><div><dt>Climb for you both</dt><dd class="num">'+(o.gLo===o.gHi?gbp(o.gLo*2):gbp(o.gLo*2)+'–'+gbp(o.gHi*2).slice(1))+'</dd></div><div><dt>All-in for you both</dt><dd class="num">≈ '+gbp(Math.round((o.gLo+EXTRA_LO)*2/100)*100)+'–'+gbp(Math.round((o.gHi+EXTRA_HI)*2/100)*100).slice(1)+'</dd></div><div><dt>Pricing</dt><dd>'+esc(o.share)+'</dd></div><div><dt>Own tent and room</dt><dd>'+esc(o.suppTxt)+'</dd></div></dl>'+
+        '<ul class="feat" aria-label="Safety features">'+feats+'</ul>'+
+        (o.warn?'<p class="note warn">'+esc(o.warn)+'</p>':'')+
+        '<p class="note">'+esc(o.note)+'</p>';
+      box.appendChild(card);
+    });
+  }
+
+  /* routes */
+  var routes = {
+    northern9:{name:'Northern Circuit', days:9, crowd:'Under 5% of climbers, the quietest', sleep:'Tents', odds:[85,98], verdict:['good','Excellent: the most time to acclimatise'],
+      stops:[[0,2360,'Lemosho Gate'],[1,2650,'Mti Mkubwa'],[2,3610,'Shira 1'],[3,3850,'Shira 2'],[3.5,4630,'Lava Tower','h'],[4,4200,'Moir Hut'],[5,4020,'Buffalo'],[6,3870,'Third Cave'],[7,4750,'School Hut'],[7.5,5895,'Uhuru','t'],[8,3100,'Mweka'],[9,1640,'Mweka Gate']]},
+    lemosho8:{name:'Lemosho', days:8, crowd:'About 21%; quiet start, then joins Machame', sleep:'Tents', odds:[85,92], verdict:['good','Excellent: the classic choice'],
+      stops:[[0,2360,'Lemosho Gate'],[1,2650,'Mti Mkubwa'],[2,3610,'Shira 1'],[3,3850,'Shira 2'],[3.5,4630,'Lava Tower','h'],[4,3960,'Barranco'],[5,4035,'Karanga'],[6,4670,'Barafu'],[6.5,5895,'Uhuru','t'],[7,3100,'Mweka'],[8,1640,'Mweka Gate']]},
+    rongai7:{name:'Rongai', days:7, crowd:'About 9%; quiet', sleep:'Tents', odds:[70,85], verdict:['good','Good, and the pick for a wetter month'],
+      stops:[[0,1950,'Rongai Gate'],[1,2670,'Simba Camp'],[2,3450,'Second Cave'],[3,3630,'Kikelewa'],[4,4330,'Mawenzi Tarn'],[5,4720,'Kibo Hut'],[5.5,5895,'Uhuru','t'],[6,3720,'Horombo'],[7,1860,'Marangu Gate']]},
+    machame7:{name:'Machame', days:7, crowd:'About 43%, the busiest', sleep:'Tents', odds:[65,90], verdict:['ok','OK on 7 days; avoid the 6-day version'],
+      stops:[[0,1640,'Machame Gate'],[1,2835,'Machame Camp'],[2,3850,'Shira 2'],[2.5,4630,'Lava Tower','h'],[3,3960,'Barranco'],[4,4035,'Karanga'],[5,4670,'Barafu'],[5.5,5895,'Uhuru','t'],[6,3100,'Mweka'],[7,1640,'Mweka Gate']]},
+    marangu6:{name:'Marangu', days:6, crowd:'About 26%; busy, same way up and down', sleep:'Huts (the only route with beds)', odds:[50,75], verdict:['bad','Poor: too little time to acclimatise'],
+      stops:[[0,1860,'Marangu Gate'],[1,2720,'Mandara Hut'],[2,3720,'Horombo Hut'],[2.5,4020,'Zebra Rocks','h'],[3,3720,'Horombo Hut'],[4,4720,'Kibo Hut'],[4.5,5895,'Uhuru','t'],[5,3720,'Horombo Hut'],[6,1860,'Marangu Gate']]},
+    marangu5:{name:'Marangu', days:5, crowd:'About 26%; busy', sleep:'Huts', odds:[30,55], verdict:['bad','Avoid: the lowest success of any option'],
+      stops:[[0,1860,'Marangu Gate'],[1,2720,'Mandara Hut'],[2,3720,'Horombo Hut'],[3,4720,'Kibo Hut'],[3.5,5895,'Uhuru','t'],[4,3720,'Horombo Hut'],[5,1860,'Marangu Gate']]},
+    umbwe6:{name:'Umbwe', days:6, crowd:'About 1%', sleep:'Tents', odds:[50,70], verdict:['bad','Avoid: steepest, fastest height gain'],
+      stops:[[0,1640,'Umbwe Gate'],[1,2850,'Umbwe Cave'],[2,3960,'Barranco'],[3,4035,'Karanga'],[4,4670,'Barafu'],[4.5,5895,'Uhuru','t'],[5,3100,'Mweka'],[6,1640,'Mweka Gate']]}
+  };
+  var routeOrder = ['northern9','lemosho8','rongai7','machame7','marangu6','marangu5','umbwe6'];
+  if (!routes[state.route]) state.route='lemosho8';
+  var routeChips = document.getElementById('routeChips');
+  routeOrder.forEach(function(k){
+    var r=routes[k];
+    var b=el('button',{type:'button','class':'chip-btn','data-route':k}, esc(r.name)+' · '+r.days+' days');
+    b.addEventListener('click', function(){ state.route=k; save(); renderRoute(); });
+    routeChips.appendChild(b);
+  });
+  function nightsHigh(r){
+    var n=0;
+    for (var i=0;i<r.stops.length;i++){ var s=r.stops[i]; if (s[3]==='t') break; if (!s[3] && s[0]>0 && s[1]>=3500) n++; }
+    return n;
+  }
+  var NS='http://www.w3.org/2000/svg';
+  function svgEl(tag, attrs, text){ var n=document.createElementNS(NS,tag); Object.keys(attrs).forEach(function(k){ n.setAttribute(k, attrs[k]); }); if(text!=null) n.textContent=text; return n; }
+  function renderRoute(){
+    routeChips.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-route')===state.route?'true':'false'); });
+    var r=routes[state.route];
+    document.getElementById('profTitle').textContent = r.name+', '+r.days+' days: altitude by day';
+    var svg=document.getElementById('profile'); while(svg.firstChild) svg.removeChild(svg.firstChild);
+    var L=56, R=620, T=24, B=250, maxDay=9, lo=1500, hi=6000;
+    var x=function(d){ return L + d/maxDay*(R-L); }, y=function(a){ return B - (a-lo)/(hi-lo)*(B-T); };
+    svg.appendChild(svgEl('rect',{'class':'zone',x:L,y:y(hi),width:R-L,height:y(3500)-y(hi)}));
+    [2000,3000,4000,5000,6000].forEach(function(a){
+      svg.appendChild(svgEl('line',{'class':'grid',x1:L,x2:R,y1:y(a),y2:y(a)}));
+      svg.appendChild(svgEl('text',{x:L-8,y:y(a)+4,'text-anchor':'end'}, a.toLocaleString('en-GB')));
+    });
+    for (var d=0; d<=maxDay; d++){ svg.appendChild(svgEl('text',{x:x(d),y:B+18,'text-anchor':'middle'}, d===0?'Start':'Day '+d)); }
+    svg.appendChild(svgEl('text',{x:L-8,y:12,'text-anchor':'end'},'metres'));
+    var pts=r.stops.map(function(s){ return x(s[0])+','+y(s[1]); }).join(' ');
+    svg.appendChild(svgEl('polygon',{'class':'area',points:x(r.stops[0][0])+','+B+' '+pts+' '+x(r.stops[r.stops.length-1][0])+','+B}));
+    svg.appendChild(svgEl('polyline',{'class':'line',points:pts}));
+    r.stops.forEach(function(s,i){
+      var cls = s[3]==='t'?'dot top':(s[3]==='h'?'dot hike':'dot');
+      var c=svgEl('circle',{'class':cls,cx:x(s[0]),cy:y(s[1]),r:s[3]==='h'?3.5:5});
+      c.appendChild(svgEl('title',{}, s[2]+' · '+s[1].toLocaleString('en-GB')+' m'));
+      svg.appendChild(c);
+    });
+    var top=r.stops.filter(function(s){return s[3]==='t';})[0];
+    svg.appendChild(svgEl('text',{'class':'lab',x:x(top[0]),y:y(top[1])-10,'text-anchor':'middle'},'Uhuru 5,895 m'));
+    var last=r.stops.filter(function(s){ return s[3]!=='t' && s[3]!=='h'; });
+    var camp=last.filter(function(s,i){ return i>0 && s[0]<top[0]; }).pop();
+    svg.appendChild(svgEl('text',{x:x(camp[0])-8,y:y(camp[1])-10,'text-anchor':'end'},camp[2]+' '+camp[1].toLocaleString('en-GB')+' m'));
+    svg.appendChild(svgEl('text',{x:R,y:y(3500)+14,'text-anchor':'end'},'3,500 m'));
+
+    var v=r.verdict;
+    document.getElementById('routeFacts').innerHTML =
+      '<h3>'+esc(r.name)+', '+r.days+' days</h3>'+
+      '<p class="verdict '+v[0]+'">'+esc(v[1])+'</p>'+
+      '<dl class="facts">'+
+      '<dt>Nights above 3,500 m before summit night</dt><dd class="num">'+nightsHigh(r)+'</dd>'+
+      '<dt>Summit night starts from</dt><dd>'+esc(camp[2])+', '+camp[1].toLocaleString('en-GB')+' m</dd>'+
+      '<dt>Sleeping</dt><dd>'+esc(r.sleep)+'</dd>'+
+      '<dt>Crowds</dt><dd>'+esc(r.crowd)+'</dd>'+
+      '<dt>Operator success estimates</dt><dd class="num">'+r.odds[0]+'–'+r.odds[1]+'%</dd>'+
+      '</dl>';
+    renderOdds();
+  }
+  function renderOdds(){
+    var box=document.getElementById('odds'); box.innerHTML='';
+    routeOrder.forEach(function(k){
+      var r=routes[k];
+      var row=el('div',{'class':'odds-row'+(k===state.route?' on':'')});
+      var b=el('button',{type:'button'}, esc(r.name)+' '+r.days+'d');
+      b.addEventListener('click', function(){ state.route=k; save(); renderRoute(); });
+      var t=el('div',{'class':'track',role:'img','aria-label':r.name+' '+r.days+' days: '+r.odds[0]+' to '+r.odds[1]+' percent'});
+      t.innerHTML='<span class="rng" style="left:'+r.odds[0]+'%;width:'+(r.odds[1]-r.odds[0])+'%"></span><span class="ref" style="left:88%"></span>';
+      row.appendChild(b); row.appendChild(t); row.appendChild(el('span',{'class':'num'}, r.odds[0]+'–'+r.odds[1]+'%'));
+      box.appendChild(row);
+    });
+  }
+
+  /* months */
+  var months = [
+    {m:'Jan', full:'January', rate:5, rain:43, season:'Short dry season', temp:'−10 to −20°C, the warmest months', crowd:'Busy at New Year, then moderate', moon:'21/22 or 22/23 January', verdict:'Excellent. Pairs with the Serengeti calving season. January 2027 is too soon to train for, so think 2028.'},
+    {m:'Feb', full:'February', rate:5, rain:39, season:'Short dry season', temp:'−8 to −18°C, can be windy', crowd:'Moderate, the quietest dry month', moon:'20/21 February', verdict:'Excellent. February 2027 is only five months away, so February 2028 is more realistic.'},
+    {m:'Mar', full:'March', rate:3, rain:94, season:'Long rains begin late in the month', temp:'−8 to −18°C', crowd:'Low', moon:'21/22 March', verdict:'Risky. Easter 2027 falls on 28 March.'},
+    {m:'Apr', full:'April', rate:1, rain:132, season:'Long rains, the wettest month', temp:'−8 to −16°C, the most snow', crowd:'Very low', moon:'20/21 April', verdict:'Avoid. Snow on the crater rim has turned groups back.'},
+    {m:'May', full:'May', rate:1.5, rain:73, season:'Long rains', temp:'−8 to −16°C, snowy', crowd:'Very low', moon:'19/20 May', verdict:'Avoid.'},
+    {m:'Jun', full:'June', rate:4, rain:9, season:'Long dry season begins', temp:'−10 to −20°C', crowd:'Moderate, rising', moon:'18/19 June', verdict:'Good, and quieter than July.'},
+    {m:'Jul', full:'July', rate:4.5, rain:3.5, season:'Long dry season', temp:'−15 to −25°C, the coldest', crowd:'The busiest month; UK school holidays', moon:'17/18 or 18/19 July', verdict:'Good weather, but crowded and flights cost most.'},
+    {m:'Aug', full:'August', rate:4.5, rain:6, season:'Long dry season', temp:'−15 to −25°C', crowd:'Very busy', moon:'16/17 August', verdict:'Good weather, but crowded and flights cost most.'},
+    {m:'Sep', full:'September', rate:5, rain:5, season:'Long dry season', temp:'−12 to −22°C', crowd:'Moderate, after the summer rush', moon:'15/16 September', verdict:'Best overall. Pairs with the Mara River crossings in the northern Serengeti.'},
+    {m:'Oct', full:'October', rate:4, rain:25, season:'Dry; short rains may start late', temp:'−10 to −20°C', crowd:'Moderate to low', moon:'14/15 or 15/16 October', verdict:'Good, especially early in the month.'},
+    {m:'Nov', full:'November', rate:2.5, rain:51, season:'Short rains', temp:'−10 to −18°C, snow likely', crowd:'Very low', moon:'13/14 November', verdict:'Only on the drier northern Rongai route.'},
+    {m:'Dec', full:'December', rate:4, rain:45, season:'Short rains ease', temp:'−10 to −20°C', crowd:'Very busy at Christmas and New Year', moon:'12/13 or 13/14 December', verdict:'Good early in the month, before the holiday rush.'}
+  ];
+  if (!(state.month>=0 && state.month<12)) state.month=8;
+  var mBox=document.getElementById('months');
+  function rclass(r){ return r>=4?'r-good':(r>=3?'r-mix':'r-poor'); }
+  function rtext(r){ return r===1.5?'1–2':(r===2.5?'2–3':(r===4.5?'4–5':String(r))); }
+  months.forEach(function(mo,i){
+    var b=el('button',{type:'button','class':'mbtn','aria-label':mo.full+', conditions '+rtext(mo.rate)+' out of 5'});
+    b.innerHTML='<span class="bar '+rclass(mo.rate)+'"></span><span class="m">'+mo.m+'</span><span class="s">'+rtext(mo.rate)+'</span>';
+    b.addEventListener('click', function(){ state.month=i; save(); renderMonth(); });
+    mBox.appendChild(b);
+  });
+  function renderMonth(){
+    mBox.querySelectorAll('button').forEach(function(b,i){ b.setAttribute('aria-pressed', i===state.month?'true':'false'); });
+    var mo=months[state.month];
+    document.getElementById('mTitle').textContent = mo.full+': '+mo.verdict;
+    document.getElementById('mDetail').innerHTML =
+      '<div><span>Season</span><strong>'+esc(mo.season)+'</strong></div>'+
+      '<div><span>Rain at the foot (average)</span><strong class="num">'+mo.rain+' mm</strong></div>'+
+      '<div><span>Summit night</span><strong>'+esc(mo.temp)+'</strong></div>'+
+      '<div><span>Crowds</span><strong>'+esc(mo.crowd)+'</strong></div>'+
+      '<div><span>2027 full-moon summit night</span><strong>'+esc(mo.moon)+'</strong></div>';
+  }
+
+  /* cost */
+  var cOp=document.getElementById('cOp'), cFlight=document.getElementById('cFlight'), cTips=document.getElementById('cTips'), cKit=document.getElementById('cKit'), cSolo=document.getElementById('cSolo'), cPeople=document.getElementById('cPeople');
+  ops.slice().sort(function(a,b){return a.rank-b.rank;}).forEach(function(o){
+    var p=priceText(o);
+    cOp.appendChild(el('option',{value:o.id}, esc(o.name)+' · '+esc(o.trip.split(' (')[0])+' · '+p.main));
+  });
+  cOp.value='kandoo';
+  function renderCost(){
+    var o=ops.filter(function(x){return x.id===cOp.value;})[0];
+    var climb=(o.gLo+o.gHi)/2;
+    document.getElementById('cOpHint').textContent = o.gLo===o.gHi ? 'Climb price '+gbp(climb) : 'Mid-point of '+priceText(o).main;
+    var tipsUsd=+cTips.value; document.getElementById('cTipsOut').textContent='$'+tipsUsd+' (≈ '+gbp(tipsUsd/FX)+')';
+    var lines=[
+      ['Climb (park fees included)', climb],
+      ['Return flights', +cFlight.value],
+      ['Crew tips', tipsUsd/FX],
+      ['Tanzania e-visa ($50)', 37],
+      ['Insurance to 6,000 m', 250],
+      ['Malaria tablets and jabs', 150],
+      ['Kit', +cKit.value]
+    ];
+    if (cSolo.checked) lines.push([o.supp!=null ? 'Own tent and room ('+o.suppTxt+')' : 'Own tent and room (estimate; '+o.suppTxt.toLowerCase()+')', o.supp!=null?o.supp:400]);
+    var each=lines.reduce(function(s,l){return s+l[1];},0);
+    var n=+cPeople.value;
+    document.getElementById('cEach').textContent='≈ '+gbp(Math.round(each/50)*50);
+    document.getElementById('cBothRow').hidden = n!==2;
+    document.getElementById('cEachLab').textContent = n===2 ? 'Each' : 'Total';
+    var eachR=Math.round(each/50)*50, total=eachR*n;
+    document.getElementById('cLines').innerHTML=lines.map(function(l){ return '<div><dt>'+esc(l[0])+'</dt><dd class="num">'+gbp(l[1])+'</dd></div>'; }).join('');
+    document.getElementById('cTotal').textContent='≈ '+gbp(total);
+    if (o.id==='altezza' && n===1) document.getElementById('cOpHint').textContent='Altezza charges $5,116 for one person, so this is an underestimate';
+  }
+  [cOp,cFlight,cTips,cKit,cSolo,cPeople].forEach(function(n){ n.addEventListener('input', renderCost); n.addEventListener('change', renderCost); });
+
+  /* next steps */
+  var todos=[
+    'Both see the GP: heart check for Dad, Diamox and malaria tablets for you both',
+    'Choose two or three operators and send them the questions',
+    'Look at September 2027 departures around the 15/16 September full moon',
+    'Book 6–9 months ahead (by early 2027 for September)',
+    'Start training: build to back-to-back 6–8 hour hill days',
+    'Buy insurance for you both covering 6,000 m and helicopter rescue',
+    'Book flights via Amsterdam, Doha or Istanbul'
+  ];
+  var done={}; try{ done=JSON.parse(localStorage.getItem('kili-todo')||'{}')||{}; }catch(e){ done={}; }
+  var tBox=document.getElementById('todo');
+  todos.forEach(function(t,i){
+    var li=el('li'); var id='todo-'+i;
+    li.innerHTML='<label for="'+id+'"><input type="checkbox" id="'+id+'"'+(done[i]?' checked':'')+'><span>'+esc(t)+'</span></label>';
+    li.querySelector('input').addEventListener('change', function(e){ done[i]=e.target.checked; try{ localStorage.setItem('kili-todo', JSON.stringify(done)); }catch(err){} });
+    tBox.appendChild(li);
+  });
+  var qs=[
+    'Does your success rate mean Uhuru Peak, and how many climbers is it based on?',
+    'Do you check oxygen saturation and pulse twice a day?',
+    'Do you carry bottled oxygen and a portable altitude chamber on every climb, at no extra cost?',
+    'What is your turnaround policy, and who makes the call?',
+    'What is the guide-to-climber ratio, and are guides Wilderness First Responder trained?',
+    'Are you a KPAP partner, and how much do porters carry and earn?',
+    'What is the maximum group size on this departure?',
+    'Do you need a medical form or GP letter for a climber aged 60?',
+    'Is the price per person sharing a tent and room, and what is the rate for two on a private climb?'
+  ];
+  var qBox=document.getElementById('qs');
+  qs.forEach(function(q){ qBox.appendChild(el('li',null,esc(q))); });
+  document.getElementById('copyQs').addEventListener('click', function(){
+    var text=qs.map(function(q,i){return (i+1)+'. '+q;}).join('\n');
+    var msg=document.getElementById('copyMsg');
+    function fallback(){ var r=document.createRange(); r.selectNodeContents(qBox); var s=window.getSelection(); s.removeAllRanges(); s.addRange(r); msg.textContent='Selected. Press Ctrl or Cmd + C to copy.'; }
+    try {
+      navigator.clipboard.writeText(text).then(function(){ msg.textContent='Copied.'; }, fallback);
+    } catch(e){ fallback(); }
+  });
+
+  /* nav highlight */
+  var links=[].slice.call(document.querySelectorAll('nav.tabs a'));
+  if ('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href')==='#'+en.target.id); }); } });
+    },{rootMargin:'-40% 0px -55% 0px'});
+    document.querySelectorAll('main section').forEach(function(s){ io.observe(s); });
+  }
+
+  renderOps(); renderRoute(); renderMonth(); renderCost();
+})();
+</script>
+</body>
+</html>
